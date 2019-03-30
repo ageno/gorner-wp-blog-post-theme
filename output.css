@@ -1,0 +1,37 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 31 of style.css
+
+26:     display: block;
+27: }
+28:
+29: .post_image {
+30: max-height: 400px;
+31:   width: auto;
+32: }
+33:
+34: #container h1 {
+35:     font-family: 'Abhaya Libre', serif;
+36: }
+
+Backtrace:
+style.css:31
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:452:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:452:in `each_with_index'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:452:in `tabulate'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:417:in `_to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/bin/sass:13:in `<top (required)>'
+C:/Ruby26-x64/bin/sass:23:in `load'
+C:/Ruby26-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 31 of style.css\A \A 26:     display: block;\A 27: }\A 28: \A 29: .post_image {\A 30: max-height: 400px;\A 31:   width: auto;\A 32: }\A 33: \A 34: #container h1 {\A 35:     font-family: 'Abhaya Libre', serif;\A 36: }"; }
