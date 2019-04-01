@@ -1,6 +1,6 @@
 body{
     margin: 10px;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 #container {
@@ -8,8 +8,14 @@ body{
     grid-template-columns: 50px 1fr 2fr 1fr 50px;
     max-width: 100vw;
     grid-gap: 10px;
-    justify-items: end;
+}
 
+.post__elements{
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    margin-bottom: 20px;
+    grid-column: 2/ span 3;
 }
 
 ul.post__short--description {
@@ -49,6 +55,10 @@ p{
 h6.wp-caption-text {
     margin-left: -200px;
     margin-top: 5px;
+    font-style: italic;
+    border-left: 2px solid rgba(191,53,17,0.97);
+    padding-left: 26px;
+    font-size: 12px;
 }
 
 .main_image {
@@ -91,9 +101,6 @@ header h3{
     grid-column: 3/4;
 }
 
-.post_date{
-    grid-column: 2/4;
-}
 
 blockquote {
     box-sizing: border-box;
@@ -131,6 +138,37 @@ blockquote {
 }
 .author
 {
+    width: 400px;
     grid-column: 3/4;
     justify-self: center;
+    border: 0;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.author-avatar img{
+    border-radius: 50% 50%;
+    display: inline-block;
+}
+
+span.post-meta-item.post-meta-author{
+    position: relative;
+    padding: 20px;
+    top: -100px;
+    left: 10px;
+    font-size: 20px;
+}
+
+span.author-description{
+    color:blue;
+    position: absolute;
+    padding: 20px;
+    left: -30px;
+ }
+
+span.author-mail{
+    color:red;
+    position: absolute;
+    padding: 20px;
 }
