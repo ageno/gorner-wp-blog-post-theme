@@ -144,7 +144,7 @@ blockquote {
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 20px;
-    padding: 16px;
+    padding: 10px;
 }
 
 .author-avatar img{
