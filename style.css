@@ -1,5 +1,6 @@
 body{
     margin: 10px;
+
 }
 
 #container {
@@ -8,11 +9,48 @@ body{
     max-width: 100vw;
     grid-gap: 10px;
     justify-items: end;
+
+}
+
+ul.post__short--description {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    line-height: 1.5em;
 }
 
 article{
     grid-column: 3 / 4;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    margin-left: 200px;
+    line-height: 30px;
 }
+
+article h2 {
+     font-family: 'Raleway', sans-serif
+ }
+
+article p {
+    font-size: 18px;
+    border-bottom: 20px;
+}
+
+p{
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+
+.wp-caption img {
+    margin-left: -200px;
+}
+
+
+
+h6.wp-caption-text {
+    margin-left: -200px;
+    margin-top: 5px;
+}
+
 .main_image {
     grid-column: 1 / span5;
     width: 100%;
@@ -21,7 +59,23 @@ article{
     object-position: 0 10px;
 }
 header{
-    grid-column: 2 / span 3
+    grid-column: 2 / span 3;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 16px;
+    font-size:21px ;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+header h3{
+    color: rgba(51,50,51,0.97);
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .container__image {
@@ -40,6 +94,37 @@ header{
 .post_date{
     grid-column: 2/4;
 }
+
+blockquote {
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 20px 20px 70px;
+    font: normal normal normal normal 16px/24px 'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5em;
+    background: #eee;
+    color: #898989;
+}
+
+blockquote:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    font-size: 30px;
+    font-style: normal;
+    color: #cecece;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+}
+
+blockquote {
+    margin: 10px 0px;
+}
+
 .source{
     grid-column: 3/4;
     justify-self: center;
