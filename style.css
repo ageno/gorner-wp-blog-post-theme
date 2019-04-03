@@ -211,6 +211,11 @@ header{
         margin-top: 1rem;
     }
 
+    h6.wp-caption-text{
+margin-top: 2%;
+        margin-left: 0;
+    }
+
     .source{
 
     }
@@ -218,6 +223,7 @@ header{
 
 }
 }
+
 
 
 
