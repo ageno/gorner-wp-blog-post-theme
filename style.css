@@ -1,76 +1,109 @@
 body{
     margin: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+    box-sizing: borde-box;
+    width: 100vw;
 }
 
 #container {
-    display: grid;
-    grid-template-columns: 50px 1fr 2fr 1fr 50px;
-    max-width: 100vw;
-    grid-gap: 10px;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+
+    flex-direction: column;
 }
 
 .post__elements{
-    display: inline-block;
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
     margin-bottom: 20px;
-    grid-column: 2/ span 3;
+    color: rgba(35,35,35,0.72)
 }
 
 ul.post__short--description {
     font-size: 18px;
-    font-family: 'Lora', serif;
     line-height: 1.5em;
+
 }
+
+
 
 article{
-    grid-column: 3 / 4;
-    font-family: 'Lora', serif;
-    text-align: justify;
-    margin-left: 200px;
-    line-height: 30px;
+    display: block;
+    text-align: left;
+    hyphens: auto;
+    line-height: 24px;
+    font-weight: 400;
+    flex: 700px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-article h2 {
-     font-family: 'Raleway', sans-serif
+
+ h2  {
+    font-family: "PT Serif";
+
  }
 
 article p {
     font-size: 18px;
-    border-bottom: 20px;
+    max-width: 40em;
+
 }
+
 
 p{
     margin-bottom: 30px;
     margin-top: 8px;
+    line-height: 30px;
 }
 
-.wp-caption img {
-    margin-left: -200px;
+/* Akapit
+h3{
+    text-indent: 20px;
+}*/
+
+
+ p:first-of-type::first-letter {
+    color: rgba(191,47,43,0.97);
+    font-size: 3em;
+    padding: 16px 8px 7px 0;
+    margin-right: 2px;
+    font-family: Source Serif Pro, serif;
+    float: left;
 }
 
+img.wp-caption {
+    display: block;
+    margin-bottom: 4rem;
+    margin-left: -10rem;
+    margin-top: 4rem;
+    max-width: none;
 
+}
+
+img{
+
+}
 
 h6.wp-caption-text {
-    margin-left: -200px;
-    margin-top: 5px;
+    margin-top: -3rem;
     font-style: italic;
     border-left: 2px solid rgba(191,53,17,0.97);
     padding-left: 26px;
     font-size: 12px;
+    margin-left: -10rem;
 }
 
 .main_image {
-    grid-column: 1 / span5;
     width: 100%;
-    height: 500px;
+    max-height: 500px;
     object-fit: cover;
     object-position: 0 10px;
 }
 header{
-    grid-column: 2 / span 3;
-    font-family: 'Raleway', sans-serif;
     margin-left: 40px;
     margin-right: 40px;
     padding: 16px;
@@ -78,28 +111,20 @@ header{
 }
 
 header h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 2em;
+    font-weight: 700;
 }
 
 header h3{
     color: rgba(51,50,51,0.97);
-    font-size: 1em;
+    font-family: 'PT Serif', serif;
     font-weight: 500;
+    font-size: 23px;
+    line-height: 36px;
 }
 
-.container__image {
-    grid-column: 2/4;
-}
 
-.container__image--decsription{
-    border-top: 2px solid orange;
-    font-style: italic;
-}
-
-.container_post{
-    grid-column: 3/4;
-}
 
 
 blockquote {
@@ -113,6 +138,8 @@ blockquote {
     line-height: 1.5em;
     background: #eee;
     color: #898989;
+  /*  max-width: 800px;
+    left: 100px; */
 }
 
 blockquote:before {
@@ -125,7 +152,6 @@ blockquote:before {
     position: absolute;
     top: 30px;
     left: 20px;
-
 }
 
 blockquote {
@@ -133,13 +159,11 @@ blockquote {
 }
 
 .source{
-    grid-column: 3/4;
     justify-self: center;
 }
 .author
 {
     width: 400px;
-    grid-column: 3/4;
     justify-self: center;
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -162,13 +186,43 @@ span.post-meta-item.post-meta-author{
 
 span.author-description{
     color:blue;
-    position: absolute;
-    padding: 20px;
-    left: -30px;
  }
 
 span.author-mail{
     color:red;
-    position: absolute;
-    padding: 20px;
+
 }
+
+@media (max-width:990px){
+
+    #container{
+        width: 80%;
+
+    }
+header{
+
+    margin: 0;
+}
+    article{
+        margin: 0;
+    }
+
+    img.wp-caption{
+      margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .source{
+
+    }
+.author{
+
+}
+}
+
+
+
+
