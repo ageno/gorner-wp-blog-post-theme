@@ -39,6 +39,7 @@ article{
     flex: 700px;
     margin-left: 25%;
     margin-right: 25%;
+    font-size: 18px;
 }
 
 
@@ -46,12 +47,6 @@ article{
     font-family: "PT Serif";
 
  }
-
-article p {
-    font-size: 18px;
-    max-width: 40em;
-
-}
 
 
 p{
@@ -196,7 +191,7 @@ span.author-mail{
 @media (max-width:990px){
 
     #container{
-        width: 80%;
+        width: 100%;
 
     }
 header{
@@ -204,7 +199,8 @@ header{
     margin: 0;
 }
     article{
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     img.wp-caption{
