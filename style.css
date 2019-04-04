@@ -5,37 +5,103 @@ body{
 html{
     box-sizing: border-box;
     width: 100vw;
-    
+    font-size: 14px;
 }
+
+h2 h6 {
+    font-family: "PT Serif";
+}
+
+
+/* Document level adjustments */
+html {
+    font-size: 14px;
+}
+
+
+/* Type will scale with document */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+/*CONTAINER*/
 
 #container {
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
-
     flex-direction: column;
 }
 
-.post__elements{
-    font-family: 'Comfortaa', cursive;
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: rgba(35,35,35,0.72)
+/*POST ELEMENTS*/
+.post__elements span{
+    font-family: 'PT Serif', serif;
+    letter-spacing: .2px;
+    font-weight: 100;
+
 }
+
+.fas{
+    font-size: 1.1rem;
+    color: rgba(35,35,35,0.72);
+}
+
+.date{
+    margin-right: 10px;
+
+}
+
+/*HEADER*/
+
+header{
+
+    margin: 0 40px -1.5rem 40px;
+    padding: 16px;
+    font-size:21px ;
+}
+
+header h1 {
+    font-family: 'PT Serif', serif;
+
+    font-weight: 700;
+}
+
+header h3{
+    color: rgba(51,50,51,0.97);
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+
+}
+
+
+/*ARTICLE*/
 
 ul.post__short--description {
     font-size: 18px;
     line-height: 1.5em;
-
 }
 
+.fa-tag{
+    display: inline-block;
+}
 
+.fas:before {
+    content: '';
+    padding: .5em;
+}
 
 article{
     display: block;
     text-align: left;
     hyphens: auto;
-    line-height: 24px;
+    line-height: 30px;
+    font-family: 'PT Serif', serif;
     font-weight: 400;
     flex: 700px;
     margin-left: 25%;
@@ -43,32 +109,58 @@ article{
     font-size: 18px;
 }
 
-
- h2 h6 {
-    font-family: "PT Serif";
-
- }
-
+h2{
+    margin-top: 3.6rem;
+}
 
 p{
-    margin-bottom: 30px;
     margin-top: 8px;
     line-height: 30px;
 }
+
+
+p.first-paragraph:first-of-type::first-letter {
+    display: block;
+    margin-right: 18px;
+    float: left;
+    font-size: 4.125em;
+    line-height: 1.1;
+    color: inherit;
+    margin-bottom: -16px;
+    font-family: "le-monde-livre-classic-byol",serif!important
+}
+
+
+/*RIGHT ASIDE*/
+
+aside {
+    width: 40%;
+
+    float: right;
+    /* font-style: italic; */
+    color: #008bce;
+    letter-spacing: 1px;
+    argin-top: -6px;
+    padding: 10px;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
 
 /* Akapit
 h3{
     text-indent: 20px;
 }*/
 
+/*POST IMAGES*/
 
- p:first-of-type::first-letter {
-    color: rgba(191,47,43,0.97);
-    font-size: 3em;
-    padding: 16px 8px 7px 0;
-    margin-right: 2px;
-    font-family: Source Serif Pro, serif;
-    float: left;
+.main_image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: 0 10px;
 }
 
 img.wp-caption {
@@ -77,10 +169,8 @@ img.wp-caption {
     margin-top: 2rem;
     max-width: none;
     width: calc(70% + 30rem);
-}
-
-img{
-
+    border: 0;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 h6.wp-caption-text {
@@ -93,35 +183,7 @@ h6.wp-caption-text {
     letter-spacing: .5px;
 }
 
-.main_image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    object-position: 0 10px;
-}
-header{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 16px;
-    font-size:21px ;
-}
-
-header h1 {
-    font-family: 'PT Serif', serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header h3{
-    color: rgba(51,50,51,0.97);
-    font-family: 'PT Serif', serif;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 36px;
-}
-
-
-
+/*BLOCKQUOTE*/
 
 blockquote {
     box-sizing: border-box;
@@ -129,7 +191,7 @@ blockquote {
     padding: 20px 20px 20px 70px;
     font: normal normal normal normal 16px/24px 'Merriweather Sans', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 16px;
+
     font-style: italic;
     line-height: 1.5em;
     background: #eee;
@@ -142,7 +204,7 @@ blockquote:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f10d";
-    font-size: 30px;
+
     font-style: normal;
     color: #cecece;
     position: absolute;
@@ -154,9 +216,13 @@ blockquote {
     margin: 10px 0px;
 }
 
+/*SOURCE*/
+
 .source{
     justify-self: center;
 }
+
+/*ABOUT AUTHOR*/
 .author
 {
     width: 400px;
@@ -177,7 +243,7 @@ span.post-meta-item.post-meta-author{
     padding: 20px;
     top: -100px;
     left: 10px;
-    font-size: 20px;
+
 }
 
 span.author-description{
@@ -189,21 +255,27 @@ span.author-mail{
 
 }
 
+
+/*@MEDIA PROPERTIES*/
+
 @media (max-width:990px){
 
     #container{
         margin-left: auto;
         margin-right: auto;
-
-
     }
   header{
-    margin: 0;
+    margin:0 0 -2.5rem 0;
     }
+
    article{
      margin-left: 2%;
      margin-right: 2%;
     }
+
+   h2{
+       margin-top: 2.6rem;
+   }
 
     img.wp-caption{
       margin-left: 0;
@@ -228,6 +300,42 @@ span.author-mail{
 }
 }
 
+
+
+/* FONTS AND LINE-HEIGHT SIZES ON SMALL DEVICES*/
+@media (max-width: 900px) {
+    html { font-size: 14px;
+    line-height: 16px;
+    }
+
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.25em;
+}
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.25em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.90rem;
+}
+
+blockquote, li, p, h4{
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+
+
+
+}
+
+@media (max-width: 400px) {
+    html { font-size: 13px; }
+}
 
 
 
