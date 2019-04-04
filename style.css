@@ -54,6 +54,7 @@ h3 {
 
 .date{
     margin-right: 10px;
+    position: absolute;
 
 }
 
@@ -79,6 +80,10 @@ header h3{
 
 }
 
+
+hr.style2 {
+    border-top: 3px double #8c8b8b;
+}
 
 /*ARTICLE*/
 
@@ -222,9 +227,19 @@ blockquote {
     justify-self: center;
 }
 
+
+/*POST DATE*/
+.post__date{
+    position: relative;
+    top: -4.6rem;
+    left: 23rem;
+}
+
+
 /*ABOUT AUTHOR*/
 .author
 {
+    max-width: 400px;
     justify-self: center;
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -235,15 +250,31 @@ blockquote {
 .author-avatar img{
     border-radius: 50% 50%;
     display: inline-block;
+    max-height: 100px;
+
+}
+
+.author-avatar{
+    position: relative;
+    top: 1.2rem;
+
 }
 
 span.post-meta-item.post-meta-author{
-    position: relative;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 3rem;
+    left: 8rem;
+
+}
+   /* position: relative;
     padding: 20px;
     top: -100px;
     left: 10px;
-
 }
+*/
+
 
 span.author-description{
     color:blue;
@@ -265,6 +296,17 @@ span.author-mail{
     }
   header{
     margin:0 0 -2.5rem 0;
+    }
+
+    .post__date{
+        left: 9rem;
+        top:0px;
+    }
+    span.post-meta-item.post-meta-author{
+        position: absolute;
+        top: 1rem;
+        left: 8rem;
+
     }
 
    article{
@@ -290,6 +332,11 @@ span.author-mail{
     padding-right: 6px;
     margin-left: -1px;
     }
+
+    aside{
+        width: 100%;
+    }
+
 
     .source{
 
