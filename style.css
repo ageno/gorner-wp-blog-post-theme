@@ -119,7 +119,7 @@ p{
 }
 
 
-p.first-paragraph:first-of-type::first-letter {
+p.first-paragraph::first-letter {
     display: block;
     margin-right: 18px;
     float: left;
