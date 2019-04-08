@@ -55,6 +55,9 @@ h3 {
 .date{
     margin-right: 10px;
     position: absolute;
+    top: 4rem;
+    left: 20rem;
+    text-transform: inherit;
 
 }
 
@@ -80,9 +83,17 @@ header h3{
 
 }
 
-
+/*HORIZONTAL LINE*/
 hr.style2 {
-    border-top: 3px double #8c8b8b;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: ridge;
+    border-width: .5px;
 }
 
 /*ARTICLE*/
@@ -104,7 +115,9 @@ ul.post__short--description {
 article{
     display: block;
     text-align: left;
-    hyphens: auto;
+    /*hyphens: auto;
+    Dzielenie wyrazu, który się nie mieści do następnego wiersza
+    */
     line-height: 30px;
     font-family: 'PT Serif', serif;
     font-weight: 400;
@@ -186,6 +199,7 @@ h6.wp-caption-text {
     font-size: 12px;
     margin-left: -8.5rem;
     letter-spacing: .5px;
+    line-height: 17px;
 }
 
 /*BLOCKQUOTE*/
@@ -248,24 +262,27 @@ blockquote {
 }
 
 .author-avatar img{
-    border-radius: 50% 50%;
     display: inline-block;
-    max-height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #dddee4;
 
 }
 
 .author-avatar{
     position: relative;
     top: 1.2rem;
+    padding: 24px 0;
 
 }
 
-span.post-meta-item.post-meta-author{
+.post-meta-item.post-meta-author{
     position: absolute;
     text-transform: uppercase;
-    font-weight: bold;
-    top: 3rem;
-    left: 8rem;
+    top: 4rem;
+    left: 6rem;
 
 }
    /* position: relative;
