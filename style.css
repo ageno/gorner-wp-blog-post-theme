@@ -1,6 +1,6 @@
 body{
     margin: 10px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "PT Serif";
 }
 html{
     box-sizing: border-box;
@@ -301,6 +301,10 @@ span.author-mail{
     color:red;
 
 }
+
+/*LIST WITH ARTICLE SERIES*/
+
+
 
 
 /*@MEDIA PROPERTIES*/
