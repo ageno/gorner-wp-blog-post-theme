@@ -1,8 +1,9 @@
-body{
+body {
     margin: 10px;
     font-family: "PT Serif";
 }
-html{
+
+html {
     box-sizing: border-box;
     width: 100vw;
     font-size: 14px;
@@ -12,22 +13,9 @@ h2 h6 {
     font-family: "PT Serif";
 }
 
-
-/* Document level adjustments */
-html {
-    font-size: 14px;
-}
-
-
-/* Type will scale with document */
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2.5rem;
-}
-h3 {
-    font-size: 2rem;
+ul {
+    font-size: 18px;
+    line-height: 1.5em;
 }
 
 /*CONTAINER*/
@@ -37,22 +25,23 @@ h3 {
     margin-right: auto;
     margin-left: auto;
     flex-direction: column;
+    display: flex;
 }
 
 /*POST ELEMENTS*/
-.post__elements span{
+.post__elements span {
     font-family: 'PT Serif', serif;
     letter-spacing: .2px;
     font-weight: 100;
 
 }
 
-.fas{
+.fas {
     font-size: 1.1rem;
-    color: rgba(35,35,35,0.72);
+    color: rgba(35, 35, 35, 0.72);
 }
 
-.date{
+.date {
     margin-right: 10px;
     position: absolute;
     top: 4rem;
@@ -63,11 +52,11 @@ h3 {
 
 /*HEADER*/
 
-header{
+header {
 
     margin: 0 40px -1.5rem 40px;
     padding: 16px;
-    font-size:21px ;
+    font-size: 21px;
 }
 
 header h1 {
@@ -76,8 +65,8 @@ header h1 {
     font-weight: 700;
 }
 
-header h3{
-    color: rgba(51,50,51,0.97);
+header h3 {
+    color: rgba(51, 50, 51, 0.97);
     font-family: 'PT Serif', serif;
     font-weight: 500;
 
@@ -96,14 +85,18 @@ hr.style2 {
     border-width: .5px;
 }
 
-/*ARTICLE*/
-
 ul.post__short--description {
-    font-size: 18px;
-    line-height: 1.5em;
+    display: inline-block;
 }
 
-.fa-tag{
+/*ARTICLE*/
+
+/*ul.post__short--description {
+    font-size: 18px;
+    line-height: 1.5em;
+} */
+
+.fa-tag {
     display: inline-block;
 }
 
@@ -112,7 +105,21 @@ ul.post__short--description {
     padding: .5em;
 }
 
-article{
+.lead{
+    display: block;
+    text-align: left;
+    /*hyphens: auto;
+    Dzielenie wyrazu, który się nie mieści do następnego wiersza
+    */
+    line-height: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    flex: 700px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 18px;
+}
+article {
     display: block;
     text-align: left;
     /*hyphens: auto;
@@ -127,11 +134,11 @@ article{
     font-size: 18px;
 }
 
-h2{
+h2 {
     margin-top: 3.6rem;
 }
 
-p{
+p {
     margin-top: 8px;
     line-height: 30px;
 }
@@ -145,24 +152,25 @@ p.first-paragraph::first-letter {
     line-height: 1.1;
     color: inherit;
     margin-bottom: -16px;
-    font-family: "le-monde-livre-classic-byol",serif!important
+    font-family: "le-monde-livre-classic-byol", serif !important
 }
 
 
-/*RIGHT ASIDE*/
+/*RIGHT BLOCQUOTE*/
 
-aside {
+.right__blockquote {
     width: 40%;
 
     float: right;
     /* font-style: italic; */
     color: #008bce;
     letter-spacing: 1px;
-    argin-top: -6px;
     padding: 10px;
+    margin: 6px 0 6px 4px;
+
 }
 
-aside > p {
+.right__blockquote > p {
     margin: .5rem;
 }
 
@@ -194,7 +202,7 @@ img.wp-caption {
 h6.wp-caption-text {
     margin-top: 1rem;
     font-style: italic;
-    border-left: 2px solid rgba(191,53,17,0.97);
+    border-left: 2px solid rgba(191, 53, 17, 0.97);
     padding-left: 26px;
     font-size: 12px;
     margin-left: -8.5rem;
@@ -204,7 +212,7 @@ h6.wp-caption-text {
 
 /*BLOCKQUOTE*/
 
-blockquote {
+.main__blockquote {
     box-sizing: border-box;
     position: relative;
     padding: 20px 20px 20px 70px;
@@ -215,11 +223,11 @@ blockquote {
     line-height: 1.5em;
     background: #eee;
     color: #898989;
-  /*  max-width: 800px;
-    left: 100px; */
+    /*  max-width: 800px;
+      left: 100px; */
 }
 
-blockquote:before {
+.main__blockquote:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f10d";
@@ -231,19 +239,19 @@ blockquote:before {
     left: 20px;
 }
 
-blockquote {
+.main__blockquote {
     margin: 10px 0px;
 }
 
 /*SOURCE*/
 
-.source{
+.source {
     justify-self: center;
 }
 
 
 /*POST DATE*/
-.post__date{
+.post__date {
     position: relative;
     top: -4.6rem;
     left: 23rem;
@@ -251,8 +259,7 @@ blockquote {
 
 
 /*ABOUT AUTHOR*/
-.author
-{
+.author {
     max-width: 400px;
     justify-self: center;
     border: 0;
@@ -261,7 +268,7 @@ blockquote {
     padding: 10px;
 }
 
-.author-avatar img{
+.author-avatar img {
     display: inline-block;
     width: 6.25rem;
     height: 6.25rem;
@@ -271,137 +278,191 @@ blockquote {
 
 }
 
-.author-avatar{
+.author-avatar {
     position: relative;
     top: 1.2rem;
     padding: 24px 0;
 
 }
 
-.post-meta-item.post-meta-author{
+.post-meta-item.post-meta-author {
     position: absolute;
     text-transform: uppercase;
     top: 4rem;
     left: 6rem;
 
 }
-   /* position: relative;
-    padding: 20px;
-    top: -100px;
-    left: 10px;
+
+/* position: relative;
+ padding: 20px;
+ top: -100px;
+ left: 10px;
 }
 */
 
 
-span.author-description{
-    color:blue;
- }
+span.author-description {
+    color: blue;
+}
 
-span.author-mail{
-    color:red;
+span.author-mail {
+    color: red;
 
 }
 
 /*LIST WITH ARTICLE SERIES*/
 
+#series {
+    color: rgba(12, 12, 12, 0.72);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.series__list {
+    list-style: none;
+
+}
+
+li.series__link {
+    padding: 0 3em;
+    margin: -13px 4em;
+    overflow: hidden;
+}
+
+li.series__link:hover {
+    color: #008bce;
+    cursor: pointer;
+
+}
+
+li.series__link:nth-child(2) {
+    border-top: 2px solid #000;
+}
 
 
+span.number {
+    font-size: 2.5em;
+    margin: .4em;
+    display: inline-block;
+    position: relative;
+    top: .2em;
+    border-right: 1px solid #cccccc;
+    line-height: .7em;
+    padding-right: 10px;
+}
+
+/*span.number:after{
+    content: "";
+
+    margin-left: 16px;
+}*/
+
+
+.series__list h2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
 
 /*@MEDIA PROPERTIES*/
 
-@media (max-width:990px){
+@media (max-width: 990px) {
 
-    #container{
+    #container {
         margin-left: auto;
         margin-right: auto;
     }
-  header{
-    margin:0 0 -2.5rem 0;
+
+    header {
+        margin: 0 0 -2.5rem 0;
     }
 
-    .post__date{
+    .post__date {
         left: 9rem;
-        top:0px;
+        top: 0px;
     }
-    span.post-meta-item.post-meta-author{
+
+    span.post-meta-item.post-meta-author {
         position: absolute;
         top: 1rem;
         left: 8rem;
 
     }
 
-   article{
-     margin-left: 2%;
-     margin-right: 2%;
+    article {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-   h2{
-       margin-top: 2.6rem;
-   }
+    h2 {
+        margin-top: 2.6rem;
+    }
 
-    img.wp-caption{
-      margin-left: 0;
-      width: 100%;
+    img.wp-caption {
+        margin-left: 0;
+        width: 100%;
         height: auto;
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
 
-    h6.wp-caption-text{
-    margin-top: 2%;
-    padding-left: 16px;
-    padding-right: 6px;
-    margin-left: -1px;
+    h6.wp-caption-text {
+        margin-top: 2%;
+        padding-left: 16px;
+        padding-right: 6px;
+        margin-left: -1px;
     }
 
-    aside{
+    aside {
         width: 100%;
     }
 
 
-    .source{
+    .source {
 
     }
-.author{
 
-}
-}
+    .author {
 
+    }
+}
 
 
 /* FONTS AND LINE-HEIGHT SIZES ON SMALL DEVICES*/
 @media (max-width: 900px) {
-    html { font-size: 14px;
-    line-height: 16px;
+    html {
+        font-size: 14px;
+        line-height: 16px;
     }
 
 
-h1 {
-    font-size: 2rem;
-    line-height: 1.25em;
-}
-h2 {
-    font-size: 1.4rem;
-    line-height: 1.25em;
-}
+    h1 {
+        font-size: 2rem;
+        line-height: 1.25em;
+    }
 
-h3 {
-    font-size: 1.5rem;
-    line-height: 1.90rem;
-}
+    h2 {
+        font-size: 1.4rem;
+        line-height: 1.25em;
+    }
 
-blockquote, li, p, h4{
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.90rem;
+    }
 
-
+    blockquote, li, p, h4 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
 
 
 }
 
 @media (max-width: 400px) {
-    html { font-size: 13px; }
+    html {
+        font-size: 13px;
+    }
 }
 
 
