@@ -138,6 +138,7 @@ hr.style {
 
 ul.post__short--description {
     display: inline-block;
+    font-size: 16px;
 }
 
 /*ARTICLE*/
@@ -158,6 +159,19 @@ ul.post__short--description {
     top: 0;
     width: 100%;
 }
+
+/*ARTICLE INTRODUCTION*/
+
+.article__introduction{
+  font-size: 16px;
+  padding-bottom: 3rem;
+}
+
+.article__introduction h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
 
 /*LIST WITH ARTICLE SERIES*/
 
@@ -269,14 +283,17 @@ p {
 
 
 p.first-paragraph::first-letter {
-    display: block;
-    margin-right: 18px;
-    float: left;
-    font-size: 4.125em;
-    line-height: 1.1;
-    color: inherit;
-    margin-bottom: -16px;
-    font-family: "le-monde-livre-classic-byol", serif !important
+  display: block;
+  margin-right: 19px;
+  float: left;
+  font-size: 4.125em;
+  line-height: -3.9;
+  color: inherit;
+  margin-bottom: 8px;
+  font-family: "le-monde-livre-classic-byol", serif !important;
+  margin-bottom: -4px;
+  padding-bottom: 16px;
+  padding-top: 17px;
 }
 
 
@@ -533,7 +550,3 @@ h6.wp-caption-text {
         font-size: 13px;
     }
 }
-
-
-
-
