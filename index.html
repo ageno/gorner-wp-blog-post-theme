@@ -46,6 +46,27 @@
             kilogramów w trybie ekspresowym.
         </h3>
 
+        <div id="series" class="test"
+
+             onscroll="scrollFunction" >
+
+            <ul class="series__list"><h2>Więcej artykułów z serii</h2>
+                <li class="series__link"><span class="number">1</span>Przegląd najciekawszych zajęć fitness, które
+                    poprawią Twoją kondycję
+                </li>
+                <li class="series__link"><span class="number">2</span>Rozciąganie – dlaczego nie możesz o nim zapominać?
+                </li>
+                <li class="series__link"><span class="number">3</span>Trening ze skakanką – jak skakać, aby schudnąć?
+                </li>
+                <li class="series__link"><span class="number">4</span>Domowa siłownia. Jaki sprzęt do ćwiczeń w domu
+                    wybrać?
+                </li>
+                <li class="series__link"><span class="number">5</span>Pilates – dla kogo jest przeznaczony i jakie
+                    efekty przynosi?
+                </li>
+            </ul>
+        </div>
+
     </header>
 
 
@@ -77,23 +98,6 @@
 
         </div>
 
-        <div id="series">
-            <ul class="series__list"><h2>Więcej artykułów z serii</h2>
-                <li class="series__link"><span class="number">1</span>Przegląd najciekawszych zajęć fitness, które
-                    poprawią Twoją kondycję
-                </li>
-                <li class="series__link"><span class="number">2</span>Rozciąganie – dlaczego nie możesz o nim zapominać?
-                </li>
-                <li class="series__link"><span class="number">3</span>Trening ze skakanką – jak skakać, aby schudnąć?
-                </li>
-                <li class="series__link"><span class="number">4</span>Domowa siłownia. Jaki sprzęt do ćwiczeń w domu
-                    wybrać?
-                </li>
-                <li class="series__link"><span class="number">5</span>Pilates – dla kogo jest przeznaczony i jakie
-                    efekty przynosi?
-                </li>
-            </ul>
-        </div>
 
             <h2>Wiele dróg do jednego celu</h2>
             <p class="first-paragraph">
@@ -291,6 +295,22 @@
     }
 
   }
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+      document.getElementById("series").style.display = "block";
+    } else {
+      document.getElementById("series").style.display = "none";
+
+    }
+  }
+
+
+
+
 </script>
 
 </body>

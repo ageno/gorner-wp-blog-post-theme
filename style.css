@@ -23,6 +23,20 @@ ul {
     line-height: 1.5em;
 }
 
+article {
+    display: block;
+    text-align: left;
+    /*hyphens: auto;
+    Dzielenie wyrazu, który się nie mieści do następnego wiersza
+    */
+    line-height: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    margin-left: 0;
+    margin-right: 53%;
+    font-size: 18px;
+}
+
 /*MAIN CONTAINER*/
 #container {
     max-width: 1400px;
@@ -134,15 +148,30 @@ ul.post__short--description {
 } */
 
 
-
+#series {
+    overflow: hidden;
+    background-color: #333;
+    width:400px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 /*LIST WITH ARTICLE SERIES*/
 
 #series {
-    color: rgba(12, 12, 12, 0.72);
-    width: 70%;
+color:rgba(101, 101, 101, 0.94);
     margin-right: 20rem;
-    background-color: #fbfbfb;
+    background-color: #fff;
+    position: fixed;
+    top: 50px;
+    width: 450px;
+    /* margin-right: 20rem; */
+    z-index: -1;
+    left: 54%;
+    right: 21rem;
 }
 
 .series__list {
@@ -157,6 +186,7 @@ li.series__link {
     padding: 20px;
     position: relative;
     font-size: .9em;
+    padding-bottom: 3rem;
 }
 
 li.series__link:hover {
@@ -176,11 +206,13 @@ span.number {
     margin: .4em;
     display: inline-block;
     position: relative;
-    top: -.4em;
     border-right: 1px solid #cccccc;
     line-height: .7em;
     padding-right: 10px;
     float: left;
+    top: -.6rem;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
 }
 
 /*span.number:after{
@@ -194,8 +226,9 @@ span.number {
     margin-left: auto;
     margin-right: auto;
     display: table;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
-
 
 
 .fa-tag {
@@ -222,20 +255,7 @@ span.number {
     margin-right: 25%;
     font-size: 18px;
 }
-article {
-    display: block;
-    text-align: left;
-    /*hyphens: auto;
-    Dzielenie wyrazu, który się nie mieści do następnego wiersza
-    */
-    line-height: 30px;
-    font-family: 'PT Serif', serif;
-    font-weight: 400;
-    flex: 700px;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 18px;
-}
+
 
 h2 {
     margin-top: 3.6rem;
@@ -276,10 +296,10 @@ h3{
 
 img.wp-caption {
     display: block;
-    margin-left: -8.5rem;
+    margin-left: 25%;
     margin-top: 2rem;
     max-width: none;
-    width: calc(70% + 30rem);
+    /*width: calc(70% + 30rem);*/
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
