@@ -93,14 +93,13 @@ ul {
 /*HEADER*/
 
 header {
-
+    font-family: 'PT Serif', serif;
     margin: 0 40px -1.5rem 40px;
     padding: 16px;
     font-size: 21px;
 }
 
 header h1 {
-    font-family: 'PT Serif', serif;
 
     font-weight: 700;
 }
@@ -113,16 +112,14 @@ header h3 {
 }
 
 /*HORIZONTAL LINE*/
-hr.style2 {
+hr.style {
     display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: ridge;
-    border-width: .5px;
+    border: none;
+    height: 1px;
+    background-color: #E0E0E0;
+    margin: 0 auto 10px auto;
+    padding: 0;
+    width: 100%;
 }
 
 ul.post__short--description {
@@ -143,8 +140,9 @@ ul.post__short--description {
 
 #series {
     color: rgba(12, 12, 12, 0.72);
-    margin-right: auto;
-    margin-left: auto;
+    width: 70%;
+    margin-right: 20rem;
+    background-color: #fbfbfb;
 }
 
 .series__list {
@@ -153,9 +151,12 @@ ul.post__short--description {
 }
 
 li.series__link {
-    padding: 0 3em;
-    margin: -13px 4em;
+    margin: -43px 4em;
     overflow: hidden;
+    line-height: 16px;
+    padding: 20px;
+    position: relative;
+    font-size: .9em;
 }
 
 li.series__link:hover {
@@ -166,6 +167,7 @@ li.series__link:hover {
 
 li.series__link:nth-child(2) {
     border-top: 2px solid #000;
+    margin-top: 8px;
 }
 
 
@@ -174,10 +176,11 @@ span.number {
     margin: .4em;
     display: inline-block;
     position: relative;
-    top: .2em;
+    top: -.4em;
     border-right: 1px solid #cccccc;
     line-height: .7em;
     padding-right: 10px;
+    float: left;
 }
 
 /*span.number:after{
@@ -241,6 +244,7 @@ h2 {
 p {
     margin-top: 8px;
     line-height: 30px;
+    margin-bottom: 0;
 }
 
 
@@ -316,8 +320,8 @@ h6.wp-caption-text {
     font-style: normal;
     color: #cecece;
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 13px;
+    left: 32px;
 }
 
 .main__blockquote {
