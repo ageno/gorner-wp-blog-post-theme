@@ -179,6 +179,7 @@ ul.post__short--description {
 .article__introduction h2 {
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: -5px;
 }
 
 
@@ -186,19 +187,14 @@ ul.post__short--description {
 
 #series {
     color: rgba(101, 101, 101, 0.94);
-    margin-right: 8rem;
-
+    margin-top: 2rem;
+    margin-bottom: -4rem;
     background-color: #fff;
-    top: 50px;
-    /* margin-right: 20rem; */
-    z-index: -1;
-    left: 46%;
-    right: 21rem;
 }
 
 .series__list {
     list-style: none;
-
+    margin-left: -6rem;
 }
 
 li.series__link {
@@ -246,11 +242,10 @@ span.number {
 
 
 .series__list h2 {
-    margin-left: auto;
-    margin-right: auto;
     display: table;
     text-transform: uppercase;
     font-size: 1.2rem;
+    margin-left: 7rem;
 }
 
 
@@ -297,7 +292,7 @@ p.first-paragraph::first-letter {
     margin-right: 19px;
     float: left;
     font-size: 4.125em;
-    line-height: -3.9rem;
+    line-height: 0.7em;
     color: inherit;
     font-family: "le-monde-livre-classic-byol", serif !important;
     margin-bottom: -4px;
@@ -363,7 +358,6 @@ h6.wp-caption-text {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f10d";
-
     font-style: normal;
     color: #cecece;
     position: absolute;
@@ -392,6 +386,39 @@ h6.wp-caption-text {
 .right__blockquote > p {
     margin: .5rem;
     text-indent: -.5em;
+}
+
+/*READ MORE BANNER*/
+.article-read-more {
+    border: 2px solid red;
+
+    margin: 3rem;
+    position: relative;
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+.article__read-box:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f101";
+    color: #008bce;
+    font-size: 3rem;
+    position: absolute;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+}
+
+.article__read-box {
+
+}
+
+.article__read-box a {
+    text-decoration: none;
+    padding-left: 52px;
+    color: #333333;
 }
 
 
