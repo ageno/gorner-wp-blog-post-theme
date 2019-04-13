@@ -1,7 +1,11 @@
+*::selection {
+  background: rgb(118, 57, 255);
+  color: #fff;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Slab', serif;
 }
 
 html {
@@ -10,17 +14,9 @@ html {
     font-size: 14px;
 }
 
-h2, h6 {
-}
-
-h6 {
-    font-weight: 100;
-    text-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-}
-
 ul {
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 1.ageno-5em;
 }
 
 article {
@@ -32,16 +28,17 @@ article {
 }
 
 
-.article-header {
+.ageno-article-header {
   margin: 0;
   padding: 0;
   overflow: hidden;
   width: 100%;
   position: relative;
   background-color: rgba(16, 7, 39, 1);
+  background-color: rgba(3, 15, 41);
 }
 
-.article-meta__image {
+.ageno-article-meta__image {
   position: absolute;
   top: 0;
   left: 40%;
@@ -55,9 +52,9 @@ article {
 
 }
 
-.article-meta__image:after {
+.ageno-article-meta__image:after {
   content: "";
-  background: radial-gradient(ellipse closest-side, rgba(16, 7, 39, 0.5), rgba(16, 7, 39, 1));
+  background: radial-gradient(ellipse closest-side, rgba(3, 15, 41, 0.5), rgba(3, 15, 41, 1));
   width: 100%;
   height: 100%;
   top: 0;
@@ -67,45 +64,45 @@ article {
   z-index: 1;
 }
 
-.article-header__article-meta {
+.ageno-article-header__article-meta {
   padding: 32px 0;
   margin: 0 auto;
   position: relative;
   z-index: 5;
 }
 
-.article-meta__breadcrumb {
+.ageno-article-meta__breadcrumb {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 0;
   margin-bottom: 8px;
 }
 
-.article-meta__breadcrumb a {
+.ageno-article-meta__breadcrumb a {
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.ageno-5px;
   color: rgb(99, 98, 111);
   display: inline-block;
   text-decoration: none;
 }
 
 
-.article-meta__breadcrumb a:hover {
-  color: rgb(25, 211, 193);
+.ageno-article-meta__breadcrumb a:hover {
+  color: rgba(196, 194, 212, 0.58);
 }
 
 
-.article-meta__breadcrumb a:after {
+.ageno-article-meta__breadcrumb a:after {
   font-size: 16px;
   line-height: 24px;
   content: "/";
-  color: rgb(31, 19, 62);
+  color: rgba(195, 194, 208, 0.24);
   padding: 0 8px 0 8px;
   display: inline-block;
 }
 
-.article-meta__h1 {
+.ageno-article-meta__h1 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
@@ -117,18 +114,18 @@ article {
   margin: 0 0 16px 0;
 }
 
-.article-meta__post-tags {
+.ageno-article-meta__post-tags {
   z-index: 3;
   position: relative;
   font-size: 0; /*Removing spaces between elements*/
 }
-.article-meta__post-tags a {
+.ageno-article-meta__post-tags a {
   color: rgb(99, 98, 111);
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
-  border: 2px solid rgb(31, 19, 62);
+  border: 2px solid rgba(28, 36, 51, 0.62);
   border-radius: 24px;
   font-size: 12px;
   line-height: 24px;
@@ -138,71 +135,202 @@ article {
   text-decoration: none;
 }
 
-.article-meta__post-tags a:hover {
-  color: rgb(25, 211, 193);
-  border: 2px solid rgb(193, 190, 204);
+.ageno-article-meta__post-tags a:hover {
+  color: rgba(196, 194, 212, 0.58);
+  border: 2px solid rgba(144, 155, 177, 0.31);
 }
 
-.article-meta-secondary {
-  background: #fff;
+.ageno-article-meta-secondary {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(243, 245, 249);
   z-index: 2;
   position: relative;
   margin: 0 -32px;
-  padding: 8px 32px;
+  padding: 32px 32px;
   border-radius: 8px 8px 0 0;
-  white-space: nowrap;
+  overflow: hidden;
 }
 
-.article-meta-secondary__author {
-  display: inline-block;
-  width: 50%;
+.ageno-article-meta-secondary__author {
+  float: left;
+  width: 70%;
 }
 
-.author__avatar {
+.ageno-author__avatar {
   width: 48px;
   height: 48px;
-  display: inline-block;
+  float: left;
+  margin-right: 16px;
 }
 
-.author__avatar img {
+.ageno-author__avatar img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-}
-
-.author__name {
   display: inline-block;
 }
 
-.article-meta-secondary__post-datetime {
+.ageno-author__name {
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.ageno-author__name--role {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.ageno-5px;
+  color: rgb(173, 172, 183);
+}
+
+.ageno-article-meta-secondary__post-date {
   text-align: right;
-  display: inline-block;
-  width: 50%;
+  float: right;
+  width: 30%;
+  font-size: 12px;
+  line-height: 16px;
+  vertical-align: top;
+  color: rgb(173, 172, 183);
 }
+
+/* Article Series -----------------------------------------------------*/
+
+
+.ageno-article-series {
+  list-style: none;
+  counter-reset: ageno-counter1;
+  margin: 0;
+  padding: 0;
+}
+
+.ageno-article-series__url {
+  counter-increment: ageno-counter1;
+  margin: 8px 8px;
+  padding: 0;
+}
+.ageno-article-series__url::before {
+  content: counter(ageno-counter1) "";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  border: 2px solid rgb(193, 190, 204);
+  color: rgb(99, 98, 111);
+  width: 24px;
+  line-height: 24px;
+  height: 24px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.ageno-article-series__url a {
+  color: rgb(0, 117, 235);
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+
+}
+
+.ageno-article-series__url a:hover {
+  color: rgb(0, 117, 235);
+  box-shadow: inset 0 -1.5px 0 rgb(173, 172, 183);
+}
+
+.ageno-article-series__url:after {
+ content: '\279E';
+ margin-left: 8px;
+ color: rgb(173, 172, 183);
+}
+
+
+
+.ageno-article-subheader {
+  background: rgb(243, 245, 249);
+  overflow: hidden;
+}
+
+
+
+
+/* General Typography -----------------------------------------------------*/
+
+
+.ageno-h2,
+.ageno-h3,
+.ageno-h4 {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(3, 26, 78);
+  font-weight: 400;
+}
+
+.ageno-h2 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.ageno-h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.ageno-h4 {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.ageno-p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(3,27,78,.7);
+}
+
+
+.ageno-p__lead {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: rgba(3,27,78,.7);
+}
+
+
+/* End general Typography -----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 /*MAIN CONTAINER*/
-.container {
+.ageno-container {
     max-width: 740px;
     margin: 0 auto;
-    flex-direction: column;
-    display: flex;
 }
 
 /*AUTHOR BEAM*/
-.article__author-beam {
+.ageno-article__author-beam {
     position: relative;
-    top: 1.2rem;
+    top: 1.ageno-2rem;
     padding: 24px 0;
 }
 
-.article__author-image img {
+.ageno-article__author-image img {
     display: inline-block;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 6.ageno-25rem;
+    height: 6.ageno-25rem;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #dddee4;
@@ -210,34 +338,34 @@ article {
 }
 
 
-.article__author-name {
+.ageno-article__author-name {
     position: absolute;
     text-transform: uppercase;
-    top: 3.3rem;
+    top: 3.ageno-3rem;
     left: 8rem;
 }
 
 /*ARTICLE DATE*/
-.article__date {
+.ageno-article__date {
     margin-right: 10px;
     position: absolute;
     top: 5rem;
     left: 8rem;
     text-transform: inherit;
-    font-size: 1.3rem;
+    font-size: 1.ageno-3rem;
     color: #848484;
 }
 
 
 /*POST ELEMENTS*/
-.post__elements span {
-    letter-spacing: .2px;
+.ageno-post__elements span {
+    letter-spacing: .ageno-2px;
     font-weight: 100;
     line-height: 16px;
 }
 
-.fas {
-    font-size: 1.1rem;
+.ageno-fas {
+    font-size: 1.ageno-1rem;
     color: rgba(35, 35, 35, 0.72);
 }
 
@@ -245,7 +373,7 @@ article {
 /*HEADER*/
 
 header {
-    margin: 0 0 -1.5rem 0;
+    margin: 0 0 -1.ageno-5rem 0;
     padding: 16px;
     font-size: 21px;
 }
@@ -262,7 +390,7 @@ header h3 {
 }
 
 /*HORIZONTAL LINE*/
-hr.style {
+hr.ageno-style {
     display: block;
     border: none;
     height: 1px;
@@ -272,52 +400,9 @@ hr.style {
     width: 100%;
 }
 
-ul.post__short--description {
-    display: inline-block;
-    font-size: 16px;
-    list-style-type: circle;
-}
+
 
 /*ARTICLE*/
-
-/*ul.post__short--description {
-    font-size: 18px;
-    line-height: 1.5em;
-} */
-
-
-#series {
-    overflow: hidden;
-    background-color: #333;
-    font-size: 16px;
-    padding-bottom: 3rem;
-    color: #636060;
-    margin-right: 8rem;
-}
-
-.article__introduction h2 {
-    font-size: 18px;
-    color: rgba(79, 76, 76, 0.79);
-    text-transform: uppercase;
-}
-
-.article__introduction p {
-    line-height: 25px;
-}
-
-
-/*ARTICLE INTRODUCTION*/
-
-.article__introduction {
-    font-size: 16px;
-    padding-bottom: 3rem;
-}
-
-.article__introduction h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-bottom: -5px;
-}
 
 
 /*LIST WITH ARTICLE SERIES*/
@@ -329,99 +414,66 @@ ul.post__short--description {
     background-color: #fff;
 }
 
-.series__list {
+.ageno-series__list {
     list-style: none;
     margin-left: -6rem;
 }
 
-li.series__link {
+li.ageno-series__link {
     margin: -44px 4em;
     line-height: 23px;
     overflow: hidden;
     padding: 20px;
     position: relative;
-    font-size: .9em;
+    font-size: .ageno-9em;
     padding-bottom: 3rem;
 }
 
-li.series__link:hover {
+li.ageno-series__link:hover {
     color: #008bce;
     cursor: pointer;
 
 }
 
-li.series__link:nth-child(2) {
+li.ageno-series__link:nth-child(2) {
     margin-top: 8px;
     border-top: 2px solid #cccccc;
 
 }
 
 
-span.number {
-    font-size: 2.5em;
-    margin: .4em;
+span.ageno-number {
+    font-size: 2.ageno-5em;
+    margin: .ageno-4em;
     display: inline-block;
     position: relative;
     border-right: 1px solid #cccccc;
-    line-height: .7em;
+    line-height: .ageno-7em;
     padding-right: 10px;
     float: left;
-    top: -.6rem;
+    top: -.ageno-6rem;
     border-right: 1px solid #cccccc;
     padding-right: 10px;
 }
 
-/*span.number:after{
-    content: "";
-
-    margin-left: 16px;
-}*/
 
 
-.series__list h2 {
-    display: table;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin-left: 7rem;
-}
 
-
-.fas:before {
+.ageno-fas:before {
     content: '';
-    padding: .5em;
-}
-
-.lead {
-    display: block;
-    text-align: left;
-    /*hyphens: auto;
-    Dzielenie wyrazu, który się nie mieści do następnego wiersza
-    */
-    font-weight: 400;
-    flex: 700px;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 18px;
-    line-height: 3.9rem;
+    padding: .ageno-5em;
 }
 
 
-h2 {
-    margin-top: 3.6rem;
-}
-
-p {
-    margin-top: 8px;
-    line-height: 30px;
-    margin-bottom: 0;
-}
 
 
-p.first-paragraph::first-letter {
+
+
+p.ageno-first-paragraph::first-letter {
     display: block;
     margin-right: 19px;
     float: left;
-    font-size: 4.125em;
+    font-size: 4.ageno-125em;
     line-height: 0.7em;
     color: inherit;
     font-family: "le-monde-livre-classic-byol", serif !important;
@@ -431,14 +483,10 @@ p.first-paragraph::first-letter {
 }
 
 
-/* Akapit
-h3{
-    text-indent: 20px;
-}*/
 
 /*POST IMAGES*/
 
-.main_image {
+.ageno-main_image {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
@@ -446,9 +494,9 @@ h3{
 }
 
 
-img.wp-caption {
+img.ageno-wp-caption {
     display: block;
-    margin-left: -8.8rem;
+    margin-left: -8.ageno-8rem;
     margin-top: 2rem;
     max-width: none;
     width: calc(70% + 30rem);
@@ -456,20 +504,20 @@ img.wp-caption {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-h6.wp-caption-text {
+h6.ageno-wp-caption-text {
     margin-top: 1rem;
-    margin-left: -8.8rem;
+    margin-left: -8.ageno-8rem;
     font-style: italic;
     border-left: 2px solid rgba(191, 53, 17, 0.97);
     padding-left: 26px;
     font-size: 12px;
     line-height: 17px;
-    letter-spacing: .5px;
+    letter-spacing: -5px;
 }
 
 /*BLOCKQUOTE*/
 
-.main__blockquote {
+.ageno-main__blockquote {
     box-sizing: border-box;
     position: relative;
     padding: 20px 20px 20px 70px;
@@ -477,14 +525,14 @@ h6.wp-caption-text {
     font-family: 'Merriweather Sans', sans-serif;
 
     font-style: italic;
-    line-height: 1.5em;
+    line-height: 1.ageno-5em;
     background: #eee;
     color: #898989;
     /*  max-width: 800px;
       left: 100px; */
 }
 
-.main__blockquote:before {
+.ageno-main__blockquote:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f10d";
@@ -495,14 +543,14 @@ h6.wp-caption-text {
     left: 32px;
 }
 
-.main__blockquote {
+.ageno-main__blockquote {
     margin: 10px 0px;
 }
 
 
 /*RIGHT BLOCQUOTE*/
 
-.right__blockquote {
+.ageno-right__blockquote {
     width: 40%;
     float: right;
     /* font-style: italic; */
@@ -513,13 +561,13 @@ h6.wp-caption-text {
 
 }
 
-.right__blockquote > p {
-    margin: .5rem;
-    text-indent: -.5em;
+.ageno-right__blockquote > p {
+    margin: .ageno-5rem;
+    text-indent: -.ageno-5em;
 }
 
 /*READ MORE BANNER*/
-.article-read-more {
+.ageno-article-read-more {
     border: 2px solid red;
     margin: 3rem;
     position: relative;
@@ -527,7 +575,7 @@ h6.wp-caption-text {
     padding: 10px;
 }
 
-.article__read-box:before {
+.ageno-article__read-box:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f101";
@@ -539,11 +587,11 @@ h6.wp-caption-text {
     background-color: #ffffff;
 }
 
-.article__read-box {
+.ageno-article__read-box {
 
 }
 
-.article__read-box a {
+.ageno-article__read-box a {
     text-decoration: none;
     padding-left: 52px;
     color: #333333;
@@ -553,7 +601,7 @@ h6.wp-caption-text {
 
 /*ABOUT AUTHOR*/
 /*
-.author {
+.ageno-author {
     max-width: 400px;
     justify-self: center;
     border: 0;
@@ -562,24 +610,24 @@ h6.wp-caption-text {
     padding: 10px;
 }
 
-.author-avatar img {
+.ageno-author-avatar img {
     display: inline-block;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 6.ageno-25rem;
+    height: 6.ageno-25rem;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #dddee4;
 
 }
 
-.author-avatar {
+.ageno-author-avatar {
     position: relative;
-    top: 1.2rem;
+    top: 1.ageno-2rem;
     padding: 24px 0;
 
 }
 
-.post-meta-item.post-meta-author {
+.ageno-post-meta-item.ageno-post-meta-author {
     position: absolute;
     text-transform: uppercase;
     top: 4rem;
@@ -598,7 +646,7 @@ h6.wp-caption-text {
 
 /*SOURCE*/
 
-.source {
+.ageno-source {
     justify-self: center;
 }
 
@@ -613,40 +661,38 @@ h6.wp-caption-text {
     }
 
     header {
-        margin: 0 0 -2.5rem 0;
+        margin: 0 0 -2.ageno-5rem 0;
     }
 
 
-    .article__author-beam {
+    .ageno-article__author-beam {
         top: 0;
         padding: 10px 0;
     }
 
-    .article__author-image img {
-        width: 4.25rem;
-        height: 4.25rem;
+    .ageno-article__author-image img {
+        width: 4.ageno-25rem;
+        height: 4.ageno-25rem;
     }
 
-    .article__author-name {
-        top: 1.7rem;
-        left: 5.7rem;
-        font-size: 1.4rem;
+    .ageno-article__author-name {
+        top: 1.ageno-7rem;
+        left: 5.ageno-7rem;
+        font-size: 1.ageno-4rem;
 
     }
 
-    .article__date {
-        top: 3.3rem;
-        left: 5.7rem;
-        font-size: 1.2rem;
+    .ageno-article__date {
+        top: 3.ageno-3rem;
+        left: 5.ageno-7rem;
+        font-size: 1.ageno-2rem;
     }
 
 
 
-    h2 {
-        margin-top: 2.6rem;
-    }
 
-    img.wp-caption {
+
+    img.ageno-wp-caption {
         margin-left: 0;
         width: 100%;
         height: auto;
@@ -654,7 +700,7 @@ h6.wp-caption-text {
         margin-top: 1rem;
     }
 
-    h6.wp-caption-text {
+    h6.ageno-wp-caption-text {
         margin-top: 2%;
         padding-left: 16px;
         padding-right: 6px;
@@ -666,11 +712,11 @@ h6.wp-caption-text {
     }
 
 
-    .source {
+    .ageno-source {
 
     }
 
-    .author {
+    .ageno-author {
 
     }
 }
@@ -686,21 +732,18 @@ h6.wp-caption-text {
 
     h1 {
         font-size: 2rem;
-        line-height: 1.25em;
+        line-height: 1.ageno-25em;
     }
 
-    h2 {
-        font-size: 1.4rem;
-        line-height: 1.25em;
-    }
+
 
     h3 {
-        font-size: 1.5rem;
-        line-height: 1.90rem;
+        font-size: 1.ageno-5rem;
+        line-height: 1.ageno-90rem;
     }
 
     blockquote, li, p, h4 {
-        font-size: 1.4rem;
+        font-size: 1.ageno-4rem;
         line-height: 2rem;
     }
 
