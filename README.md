@@ -2,16 +2,20 @@
 
 - 8px grid
 - Font sizes:
+ - 12px
+ - 14px
  - 16px
  - 24px
- - 16px
+ - 32px
+ - 40px
+...
 
 ## Why not BEM?
 We are looking for the easiest way for copywrites to use
 
 
  Avatar from:
-<s></s> https://uifaces.co/
+- https://uifaces.co/
 
 
 
