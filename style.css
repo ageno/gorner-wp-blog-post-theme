@@ -51,7 +51,6 @@ article {
     position: relative;
     top: 1.2rem;
     padding: 24px 0;
-
 }
 
 .article__author-image img {
@@ -61,6 +60,7 @@ article {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #dddee4;
+    margin-bottom:8px;
 }
 
 
@@ -68,8 +68,7 @@ article {
     position: absolute;
     text-transform: uppercase;
     top: 3.3rem;
-    left: 7.7rem;
-
+    left: 8rem;
 }
 
 /*ARTICLE DATE*/
@@ -77,7 +76,7 @@ article {
     margin-right: 10px;
     position: absolute;
     top: 5rem;
-    left: 7.7rem;
+    left: 8rem;
     text-transform: inherit;
     font-size: 1.3rem;
     color: #848484;
@@ -139,6 +138,7 @@ hr.style {
 ul.post__short--description {
     display: inline-block;
     font-size: 16px;
+    list-style-type: circle;
 }
 
 /*ARTICLE*/
@@ -272,7 +272,6 @@ span.number {
     margin-right: 25%;
     font-size: 18px;
     line-height: 3.9rem;
-
 }
 
 
@@ -391,7 +390,6 @@ h6.wp-caption-text {
 /*READ MORE BANNER*/
 .article-read-more {
     border: 2px solid red;
-
     margin: 3rem;
     position: relative;
     background-color: #cccccc;
@@ -408,7 +406,6 @@ h6.wp-caption-text {
     width: 50px;
     border-radius: 20px;
     background-color: #ffffff;
-
 }
 
 .article__read-box {
@@ -419,6 +416,7 @@ h6.wp-caption-text {
     text-decoration: none;
     padding-left: 52px;
     color: #333333;
+    display: block;
 }
 
 
