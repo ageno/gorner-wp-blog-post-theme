@@ -1,6 +1,7 @@
 body {
-    margin: 10px;
-    font-family: "PT Serif";
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 html {
@@ -9,8 +10,7 @@ html {
     font-size: 14px;
 }
 
-h2 h6 {
-    font-family: "PT Serif";
+h2, h6 {
 }
 
 h6 {
@@ -26,22 +26,168 @@ ul {
 article {
     display: block;
     text-align: left;
-    /*hyphens: auto;
-    Dzielenie wyrazu, który się nie mieści do następnego wiersza
-    */
-    line-height: 30px;
-    font-family: 'PT Serif', serif;
+    line-height: 24px;
     font-weight: 400;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
+
+.article-header {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: rgba(16, 7, 39, 1);
+}
+
+.article-meta__image {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+}
+
+.article-meta__image:after {
+  content: "";
+  background: radial-gradient(ellipse closest-side, rgba(16, 7, 39, 0.5), rgba(16, 7, 39, 1));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+
+.article-header__article-meta {
+  padding: 32px 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.article-meta__breadcrumb {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 0;
+  margin-bottom: 8px;
+}
+
+.article-meta__breadcrumb a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  color: rgb(99, 98, 111);
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.article-meta__breadcrumb a:hover {
+  color: rgb(25, 211, 193);
+}
+
+
+.article-meta__breadcrumb a:after {
+  font-size: 16px;
+  line-height: 24px;
+  content: "/";
+  color: rgb(31, 19, 62);
+  padding: 0 8px 0 8px;
+  display: inline-block;
+}
+
+.article-meta__h1 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.article-meta__post-tags {
+  z-index: 3;
+  position: relative;
+  font-size: 0; /*Removing spaces between elements*/
+}
+.article-meta__post-tags a {
+  color: rgb(99, 98, 111);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid rgb(31, 19, 62);
+  border-radius: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  height: 24px;
+  padding: 0 16px;
+  margin: 0 16px 16px 0;
+  text-decoration: none;
+}
+
+.article-meta__post-tags a:hover {
+  color: rgb(25, 211, 193);
+  border: 2px solid rgb(193, 190, 204);
+}
+
+.article-meta-secondary {
+  background: #fff;
+  z-index: 2;
+  position: relative;
+  margin: 0 -32px;
+  padding: 8px 32px;
+  border-radius: 8px 8px 0 0;
+  white-space: nowrap;
+}
+
+.article-meta-secondary__author {
+  display: inline-block;
+  width: 50%;
+}
+
+.author__avatar {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.author__name {
+  display: inline-block;
+}
+
+.article-meta-secondary__post-datetime {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+}
+
+
+
+
+
 /*MAIN CONTAINER*/
-#container {
-    max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+    max-width: 740px;
+    margin: 0 auto;
     flex-direction: column;
     display: flex;
 }
@@ -85,7 +231,6 @@ article {
 
 /*POST ELEMENTS*/
 .post__elements span {
-    font-family: 'PT Serif', serif;
     letter-spacing: .2px;
     font-weight: 100;
     line-height: 16px;
@@ -96,17 +241,10 @@ article {
     color: rgba(35, 35, 35, 0.72);
 }
 
-/*TAGS*/
-.tags:hover {
-    cursor: pointer;
-    color: #008bce;
-}
-
 
 /*HEADER*/
 
 header {
-    font-family: 'PT Serif', serif;
     margin: 0 0 -1.5rem 0;
     padding: 16px;
     font-size: 21px;
@@ -119,7 +257,6 @@ header h1 {
 
 header h3 {
     color: rgba(51, 50, 51, 0.97);
-    font-family: 'PT Serif', serif;
     font-weight: 500;
 
 }
@@ -249,11 +386,6 @@ span.number {
 }
 
 
-.fa-tag {
-    display: inline-block;
-}
-
-
 .fas:before {
     content: '';
     padding: .5em;
@@ -265,7 +397,6 @@ span.number {
     /*hyphens: auto;
     Dzielenie wyrazu, który się nie mieści do następnego wiersza
     */
-    font-family: 'PT Serif', serif;
     font-weight: 400;
     flex: 700px;
     margin-left: 25%;
@@ -510,10 +641,6 @@ h6.wp-caption-text {
     }
 
 
-    article {
-        margin-left: 2%;
-        margin-right: 2%;
-    }
 
     h2 {
         margin-top: 2.6rem;
