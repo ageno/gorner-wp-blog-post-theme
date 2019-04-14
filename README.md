@@ -21,3 +21,4 @@ We've been abandon BEM methodology due to complexity. It has to be extremely eas
 
 ## Credits:
 - Avatars: [uifaces.co](https://uifaces.co/)
+- [Font Awesome Version 5.8.1](https://fontawesome.com/icons?from=io) (Use your own licence)
