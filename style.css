@@ -203,7 +203,7 @@ article {
 .ageno-series {
   list-style: none;
   counter-reset: ageno-counter1;
-  margin: 0 0 0 16px;
+  margin: 0 0 16px 0px;
   padding: 0;
 }
 
@@ -211,39 +211,45 @@ article {
   counter-increment: ageno-counter1;
   margin: 8px 0px;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 32px;
+  display: block;
+  position: relative;
+  margin-left: 48px;
 }
 .ageno-series li::before {
-  content: counter(ageno-counter1) "";
+  content: counter(ageno-counter1) ".";
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  border: 2px solid rgba(193, 190, 204, 0.25);
+  font-weight: 400;
   color: rgba(99, 98, 111, 0.5);
-  width: 24px;
-  line-height: 24px;
-  height: 24px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
   display: block;
-  text-align: center;
+  text-align: right;
   border-radius: 50%;
-  display: inline-block;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -40px;
   margin-right: 8px;
   vertical-align: top;
 }
 
 .ageno-series li a {
   color: rgb(0, 117, 235);
+  padding: 0 0 2px 0;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .15s ease-in-out;
 }
 
 .ageno-series li a:hover {
   color: rgb(0, 117, 235);
-  box-shadow: inset 0 -1.5px 0 rgba(173, 172, 183, .8);
+  box-shadow: inset 0 -1px 0 rgba(99, 98, 111, 0.5);
 }
 
 .ageno-series li.active a {
-  color: rgba(3,27,78,.7);
-  font-weight: 600;
+  box-shadow: inset 0 -1px 0 rgba(99, 98, 111, 0.5);
 }
 
 .ageno-series li:after {
@@ -262,11 +268,14 @@ article {
   font-family: 'Roboto Slab', serif;
   color: rgb(3, 26, 78);
   font-weight: 400;
+  padding: 32px 0 16px 0;
+  margin: 0;
 }
 
 .ageno-h2 {
   font-size: 32px;
   line-height: 32px;
+  margin: 0;
 }
 
 .ageno-h3 {
@@ -279,57 +288,77 @@ article {
   line-height: 16px;
 }
 
-.ageno-p {
+.ageno-subheader {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  color: rgb(3, 26, 78);
+  font-weight: 400;
+  padding: 32px 0 0px 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(3,27,78,.7);
+  display:block;
+}
+
+
+.ageno-p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(3,27,78,.7);
+  margin: 0 0 16px 0;
 }
 
 .ageno-p__lead {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-    color: rgba(3,27,78,.7);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: rgba(3,27,78,.7);
+  margin: 0 0 16px 0;
 }
+
+
+/*--------------*/
 
 .ageno-list {
   list-style: none;
-  margin: 0 0 0 16px;
+  margin: 0 0 16px 0px;
   padding: 0;
+  color: rgba(3,27,78,.7);
 }
 
 .ageno-list li {
   margin: 8px 0px;
   padding: 0;
-  font-size: 16px;
-  color: rgba(3,27,78,.7);
+  font-size: 18px;
+  line-height: 32px;
+  display: block;
+  position: relative;
+  margin-left: 48px;
 }
-
 .ageno-list li::before {
   content: '';
-  background: rgba(3,27,78,.7);
+  color: rgba(99, 98, 111, 0.5);
   width: 8px;
   height: 8px;
   display: block;
+  text-align: right;
   border-radius: 50%;
-  display: inline-block;
-  margin: 8px 8px 0 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -40px;
+  margin-right: 8px;
   vertical-align: top;
+  background: rgba(99, 98, 111, 0.5);
 }
 
+
+
+
+
 /* End general Typography -----------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -392,22 +421,7 @@ article {
 
 /*HEADER*/
 
-header {
-    margin: 0 0 -1.ageno-5rem 0;
-    padding: 16px;
-    font-size: 21px;
-}
 
-header h1 {
-
-    font-weight: 700;
-}
-
-header h3 {
-    color: rgba(51, 50, 51, 0.97);
-    font-weight: 500;
-
-}
 
 /*HORIZONTAL LINE*/
 hr.ageno-style {
@@ -426,67 +440,6 @@ hr.ageno-style {
 
 
 /*LIST WITH ARTICLE SERIES*/
-
-#series {
-    color: rgba(101, 101, 101, 0.94);
-    margin-top: 2rem;
-    margin-bottom: -4rem;
-    background-color: #fff;
-}
-
-.ageno-series__list {
-    list-style: none;
-    margin-left: -6rem;
-}
-
-li.ageno-series__link {
-    margin: -44px 4em;
-    line-height: 23px;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
-    font-size: .ageno-9em;
-    padding-bottom: 3rem;
-}
-
-li.ageno-series__link:hover {
-    color: #008bce;
-    cursor: pointer;
-
-}
-
-li.ageno-series__link:nth-child(2) {
-    margin-top: 8px;
-    border-top: 2px solid #cccccc;
-
-}
-
-
-span.ageno-number {
-    font-size: 2.ageno-5em;
-    margin: .ageno-4em;
-    display: inline-block;
-    position: relative;
-    border-right: 1px solid #cccccc;
-    line-height: .ageno-7em;
-    padding-right: 10px;
-    float: left;
-    top: -.ageno-6rem;
-    border-right: 1px solid #cccccc;
-    padding-right: 10px;
-}
-
-
-
-
-.ageno-fas:before {
-    content: '';
-    padding: .ageno-5em;
-}
-
-
-
-
 
 
 p.ageno-first-paragraph::first-letter {
