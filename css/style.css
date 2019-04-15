@@ -320,11 +320,13 @@ article {
 }
 
 .ageno-p__lead {
-  font-weight: 400;
-  font-size: 32px;
   line-height: 40px;
+  font-weight: 500;
+  font-size: 24px;
   color: rgba(3,27,78,.7);
-  margin: 0 0 16px 0;
+  padding: 20px;
+  width: calc(70% + 30rem);
+  margin-left: -8rem;
 }
 
 
@@ -536,17 +538,17 @@ hr.ageno-style {
 /*LIST WITH ARTICLE SERIES*/
 
 
-p.ageno-first-paragraph::first-letter {
-    display: block;
-    margin-right: 19px;
-    float: left;
-    font-size: 4.ageno-125em;
-    line-height: 0.7em;
-    color: inherit;
-    font-family: "le-monde-livre-classic-byol", serif !important;
-    margin-bottom: -4px;
-    padding-bottom: 16px;
-    padding-top: 17px;
+p:nth-of-type(2)::first-letter {
+  display: block;
+  margin-right: 19px;
+  float: left;
+  font-size: 96px;
+  line-height: 0.7em;
+  color: inherit;
+  font-family: "le-monde-livre-classic-byol", serif !important;
+  margin-bottom: -4px;
+  padding-bottom: 16px;
+  padding-top: 17px;
 }
 
 
@@ -563,7 +565,7 @@ p.ageno-first-paragraph::first-letter {
 
 img.ageno-wp-caption {
     display: block;
-    margin-left: -8.ageno-8rem;
+    margin-left: -8rem;
     margin-top: 2rem;
     max-width: none;
     width: calc(70% + 30rem);
@@ -573,13 +575,13 @@ img.ageno-wp-caption {
 
 h6.ageno-wp-caption-text {
     margin-top: 1rem;
-    margin-left: -8.ageno-8rem;
+    margin-left: -8rem;
     font-style: italic;
     border-left: 2px solid rgba(191, 53, 17, 0.97);
     padding-left: 26px;
     font-size: 12px;
     line-height: 17px;
-    letter-spacing: -5px;
+    font-weight: 400;
 }
 
 /*BLOCKQUOTE*/
