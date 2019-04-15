@@ -555,6 +555,11 @@ p:nth-of-type(2)::first-letter {
 
 /*POST IMAGES*/
 
+img.wide{
+    width: calc(70% + 30rem);
+    margin-left: -8rem;
+}
+
 .ageno-main_image {
     width: 100%;
     max-height: 500px;
@@ -565,10 +570,8 @@ p:nth-of-type(2)::first-letter {
 
 img.ageno-wp-caption {
     display: block;
-    margin-left: -8rem;
     margin-top: 2rem;
     max-width: none;
-    width: calc(70% + 30rem);
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
