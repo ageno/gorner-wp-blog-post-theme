@@ -607,28 +607,30 @@ h6.ageno-wp-caption-text {
 
 /*READ MORE BANNER*/
 .ageno-article-read-more{
-  text-align:center;
-  position:relative;
-  margin: 32px auto;
-  width:500px;
-  padding:24px;
-  font-size: 18px;
+  text-align: center;
+  position: relative;
+  margin: 32px auto 32px 0;
+  width: 500px;
+  padding: 8px;
+  font-size: 16px;
   line-height: 32px;
   color: rgba(3,27,78,.7);
   font-family: 'Merriweather Sans', sans-serif;
   background-color: #f9fcff;
 }
 
+
 .ageno-article-read-more:before{
   content: "";
   position: absolute;
   border: 1px solid #119ce629;
   background-color: #104f8800;
-  padding-bottom: 24%;
-  width: 88%;
-  left: 14%;
-  top: 21px;
+  padding: 7%;
+  width: 63%;
+  right: -20px;
+  bottom: -17px;
   z-index: -1;
+  display: block;
 }
 
 
