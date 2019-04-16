@@ -1,10 +1,7 @@
 :root {
   --ageno-border-radius: 8px;
+  --ageno-second-color: #008EDA;
 }
-
-
-
-
 
 
 *::selection {
@@ -12,7 +9,7 @@
   color: #fff;
 }
 
-body {
+body div {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -90,7 +87,7 @@ article {
 .ageno-article-meta__breadcrumb a {
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 1.ageno-5px;
+  letter-spacing: 5px;
   color: rgb(99, 98, 111);
   display: inline-block;
   text-decoration: none;
@@ -246,7 +243,7 @@ article {
 }
 
 .ageno-series li a {
-  color: rgb(0, 117, 235);
+  color:var(--ageno-second-color);
   padding: 0 0 2px 0;
   text-decoration: none;
   transition: box-shadow .15s ease-in-out;
@@ -439,7 +436,7 @@ article {
   line-height: 24px;
   position: absolute;
   top: 36px;
-  left: -8px;
+  left: -15px;
   color: rgba(3,27,78,.7);
   z-index: 3;
   text-align: center;
@@ -449,7 +446,7 @@ article {
   content: '';
   position: absolute;
   top: 24px;
-  left: -16px;
+  left: -24px;
   background: rgba(198, 198, 204, 0.34);
   border-radius: 50%;
   width: 48px;
@@ -515,26 +512,6 @@ article {
 }
 
 
-/*HEADER*/
-
-
-
-/*HORIZONTAL LINE*/
-hr.ageno-style {
-    display: block;
-    border: none;
-    height: 1px;
-    background-color: #E0E0E0;
-    margin: 0 auto 10px auto;
-    padding: 0;
-    width: 100%;
-}
-
-
-
-/*ARTICLE*/
-
-
 /*LIST WITH ARTICLE SERIES*/
 
 
@@ -554,26 +531,17 @@ p:nth-of-type(2)::first-letter {
 
 
 /*POST IMAGES*/
-
-img.wide{
-    width: calc(70% + 30rem);
-    margin-left: -8rem;
-}
-
-.ageno-main_image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    object-position: 0 10px;
-}
-
-
 img.ageno-wp-caption {
     display: block;
     margin-top: 2rem;
-    max-width: none;
     border: 0;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+img.ageno-wp-caption-center{
+    width: calc(70% + 30rem);
+    margin-left: -8rem;
+    max-width: none;
 }
 
 h6.ageno-wp-caption-text {
@@ -585,6 +553,7 @@ h6.ageno-wp-caption-text {
     font-size: 12px;
     line-height: 17px;
     font-weight: 400;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 /*BLOCKQUOTE*/
@@ -593,13 +562,11 @@ h6.ageno-wp-caption-text {
     box-sizing: border-box;
     position: relative;
     padding: 20px 20px 20px 70px;
-    font: normal normal normal normal 16px/24px 'Merriweather Sans', sans-serif;
+    font: normal normal normal normal 16px/24px;
     font-family: 'Merriweather Sans', sans-serif;
-
-    font-style: italic;
-    line-height: 1.ageno-5em;
-    background: #eee;
-    color: #898989;
+    font-style: oblique;
+    line-height: 32px;
+    color:var(--ageno-second-color);
     /*  max-width: 800px;
       left: 100px; */
 }
@@ -609,7 +576,7 @@ h6.ageno-wp-caption-text {
     font-weight: 900;
     content: "\f10d";
     font-style: normal;
-    color: #cecece;
+    color:var(--ageno-second-color);
     position: absolute;
     top: 13px;
     left: 32px;
@@ -639,35 +606,35 @@ h6.ageno-wp-caption-text {
 }
 
 /*READ MORE BANNER*/
-.ageno-article-read-more {
-    border: 2px solid red;
-    margin: 3rem;
-    position: relative;
-    background-color: #cccccc;
-    padding: 10px;
+.ageno-article-read-more{
+  text-align:center;
+  position:relative;
+  margin: 32px auto;
+  width:500px;
+  padding:24px;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(3,27,78,.7);
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #f9fcff;
 }
 
-.ageno-article__read-box:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f101";
-    color: #008bce;
-    font-size: 3rem;
-    position: absolute;
-    width: 50px;
-    border-radius: 20px;
-    background-color: #ffffff;
+.ageno-article-read-more:before{
+  content: "";
+  position: absolute;
+  border: 1px solid #119ce629;
+  background-color: #104f8800;
+  padding-bottom: 24%;
+  width: 88%;
+  left: 14%;
+  top: 21px;
+  z-index: -1;
 }
 
-.ageno-article__read-box {
 
-}
-
-.ageno-article__read-box a {
+.ageno-article-read-more a {
     text-decoration: none;
-    padding-left: 52px;
     color: #333333;
-    display: block;
 }
 
 
