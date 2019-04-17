@@ -77,7 +77,7 @@ article {
   z-index: 5;
 }
 
-.ageno-article-meta__breadcrumb {
+.ageno-article-meta__caption {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 0;
@@ -447,7 +447,8 @@ article {
   position: absolute;
   top: 24px;
   left: -24px;
-  background: rgba(198, 198, 204, 0.34);
+  /*background: rgba(198, 198, 204, 0.34);*/
+  background: #ff525214;
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -530,7 +531,7 @@ p:nth-of-type(2)::first-letter {
 
 
 
-/*POST IMAGES*/
+/*CAPTION*/
 img.ageno-wp-caption {
     display: block;
     margin-top: 2rem;
@@ -547,13 +548,13 @@ img.ageno-wp-caption-center{
 h6.ageno-wp-caption-text {
     margin-top: 1rem;
     margin-left: -8rem;
-    font-style: italic;
-    border-left: 2px solid rgba(191, 53, 17, 0.97);
     padding-left: 26px;
-    font-size: 12px;
-    line-height: 17px;
+    border-left: 3px solid #ff5252a6;
+    color: rgba(3, 27, 78, 0.63);
+    font-style: italic;
     font-weight: 400;
-    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /*BLOCKQUOTE*/
@@ -566,9 +567,9 @@ h6.ageno-wp-caption-text {
     font-family: 'Merriweather Sans', sans-serif;
     font-style: oblique;
     line-height: 32px;
-    color:var(--ageno-second-color);
-    /*  max-width: 800px;
-      left: 100px; */
+    color: rgba(3,27,78,.7);
+    background-color: #c1c1c136;
+    /*box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, 0.2);*/
 }
 
 .ageno-main__blockquote:before {
@@ -576,7 +577,7 @@ h6.ageno-wp-caption-text {
     font-weight: 900;
     content: "\f10d";
     font-style: normal;
-    color:var(--ageno-second-color);
+    color: #ff525287;
     position: absolute;
     top: 13px;
     left: 32px;
@@ -587,52 +588,42 @@ h6.ageno-wp-caption-text {
 }
 
 
-/*RIGHT BLOCQUOTE*/
-
-.ageno-right__blockquote {
-    width: 40%;
-    float: right;
-    /* font-style: italic; */
-    color: #008bce;
-    letter-spacing: 1px;
-    padding: 10px;
-    margin: 6px 0 6px 4px;
-
-}
-
-.ageno-right__blockquote > p {
-    margin: .ageno-5rem;
-    text-indent: -.ageno-5em;
-}
-
 /*READ MORE BANNER*/
-.ageno-article-read-more{
+.ageno-article-read-more {
   text-align: center;
   position: relative;
-  margin: 32px auto 32px 0;
+  margin: 32px auto 40px auto;
   width: 500px;
+  top: 8px;
   padding: 8px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: rgba(3,27,78,.7);
   font-family: 'Merriweather Sans', sans-serif;
-  background-color: #f9fcff;
 }
 
 
-.ageno-article-read-more:before{
+.ageno-article-read-more:before {
   content: "";
-  position: absolute;
-  border: 1px solid #119ce629;
-  background-color: #104f8800;
-  padding: 7%;
-  width: 63%;
-  right: -20px;
-  bottom: -17px;
-  z-index: -1;
   display: block;
+  position: absolute;
+  border: 1px solid #ff52523b;
+  width: 24%;
+  top: -8px;
+  margin-left: 36%;
+  margin-right: 36%;
 }
 
+.ageno-article-read-more:after{
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #ff52523b;
+  width: 24%;
+  bottom: -8px;
+  margin-left: 36%;
+  margin-right: 36%;
+}
 
 .ageno-article-read-more a {
     text-decoration: none;
@@ -642,9 +633,10 @@ h6.ageno-wp-caption-text {
 
 /*SOURCE*/
 
-.ageno-source {
-    justify-self: center;
-}
+.ageno-source p {
+    font-size: 16px;
+    font-weight: 400;
+  }
 
 /*@MEDIA PROPERTIES ON SMALL DEVICES*/
 
