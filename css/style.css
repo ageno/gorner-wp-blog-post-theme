@@ -1,6 +1,6 @@
 :root {
   --ageno-border-radius: 8px;
-  --ageno-second-color: #008EDA;
+
 }
 
 
@@ -15,22 +15,22 @@ body div {
 }
 
 html {
-    box-sizing: border-box;
-    width: 100vw;
-    font-size: 14px;
+  box-sizing: border-box;
+  width: 100vw;
+  font-size: 14px;
 }
 
 ul {
-    font-size: 18px;
-    line-height: 1.ageno-5em;
+  font-size: 18px;
+  line-height: 1em;
 }
 
 article {
-    display: block;
-    text-align: left;
-    line-height: 24px;
-    font-weight: 400;
-    font-size: 16px;
+  display: block;
+  text-align: left;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 
@@ -384,13 +384,13 @@ article {
 }
 
 .ageno-timeline li::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 32px;
-    bottom: 0;
-    left: -25px;
-    border-left: 3px solid rgba(3,27,78,.3);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 32px;
+  bottom: 0;
+  left: -25px;
+  border-left: 3px solid rgba(3,27,78,.3);
 }
 
 .ageno-timeline li:last-child::before{
@@ -468,33 +468,33 @@ article {
 
 /*MAIN CONTAINER*/
 .ageno-container {
-    max-width: 740px;
-    margin: 0 auto;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 /*AUTHOR BEAM*/
 .ageno-article__author-beam {
-    position: relative;
-    top: 1.ageno-2rem;
-    padding: 24px 0;
+  position: relative;
+  top: 1.ageno-2rem;
+  padding: 24px 0;
 }
 
 .ageno-article__author-image img {
-    display: inline-block;
-    width: 6.ageno-25rem;
-    height: 6.ageno-25rem;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid #dddee4;
-    margin-bottom:8px;
+  display: inline-block;
+  width: 6.ageno-25rem;
+  height: 6.ageno-25rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #dddee4;
+  margin-bottom:8px;
 }
 
 
 .ageno-article__author-name {
-    position: absolute;
-    text-transform: uppercase;
-    top: 3.ageno-3rem;
-    left: 8rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 3.ageno-3rem;
+  left: 8rem;
 }
 
 
@@ -502,14 +502,14 @@ article {
 
 /*POST ELEMENTS*/
 .ageno-post__elements span {
-    letter-spacing: .ageno-2px;
-    font-weight: 100;
-    line-height: 16px;
+  letter-spacing: .ageno-2px;
+  font-weight: 100;
+  line-height: 16px;
 }
 
 .ageno-fas {
-    font-size: 1.ageno-1rem;
-    color: rgba(35, 35, 35, 0.72);
+  font-size: 1.ageno-1rem;
+  color: rgba(35, 35, 35, 0.72);
 }
 
 
@@ -533,58 +533,58 @@ p:nth-of-type(2)::first-letter {
 
 /*CAPTION*/
 img.ageno-wp-caption {
-    display: block;
-    margin-top: 2rem;
-    border: 0;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  display: block;
+  margin-top: 2rem;
+  border: 0;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 img.ageno-wp-caption-center{
-    width: calc(70% + 30rem);
-    margin-left: -8rem;
-    max-width: none;
+  width: calc(70% + 30rem);
+  margin-left: -8rem;
+  max-width: none;
 }
 
 h6.ageno-wp-caption-text {
-    margin-top: 1rem;
-    margin-left: -8rem;
-    padding-left: 26px;
-    border-left: 3px solid #ff5252a6;
-    color: rgba(3, 27, 78, 0.63);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+  margin-top: 1rem;
+  margin-left: -8rem;
+  padding-left: 26px;
+  border-left: 3px solid #ff5252a6;
+  color: rgba(3, 27, 78, 0.63);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*BLOCKQUOTE*/
 
 .ageno-main__blockquote {
-    box-sizing: border-box;
-    position: relative;
-    padding: 20px 20px 20px 70px;
-    font: normal normal normal normal 16px/24px;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-style: oblique;
-    line-height: 32px;
-    color: rgba(3,27,78,.7);
-    background-color: #c1c1c136;
-    /*box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, 0.2);*/
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 20px 20px 70px;
+  font: normal normal normal normal 16px/24px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: oblique;
+  line-height: 32px;
+  color: rgba(3,27,78,.7);
+  background-color: #c1c1c136;
+  /*box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, 0.2);*/
 }
 
 .ageno-main__blockquote:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10d";
-    font-style: normal;
-    color: #ff525287;
-    position: absolute;
-    top: 13px;
-    left: 32px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10d";
+  font-style: normal;
+  color: #ff525287;
+  position: absolute;
+  top: 13px;
+  left: 32px;
 }
 
 .ageno-main__blockquote {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 
@@ -593,7 +593,7 @@ h6.ageno-wp-caption-text {
   text-align: center;
   position: relative;
   margin: 32px auto 40px auto;
-  width: 500px;
+  max-width: 500px;
   top: 8px;
   padding: 8px;
   font-size: 18px;
@@ -626,120 +626,128 @@ h6.ageno-wp-caption-text {
 }
 
 .ageno-article-read-more a {
-    text-decoration: none;
-    color: #333333;
+  text-decoration: none;
+  color: #333333;
 }
 
 
 /*SOURCE*/
 
 .ageno-source p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+  font-size: 16px;
+  font-weight: 400;
+}
 
 /*@MEDIA PROPERTIES ON SMALL DEVICES*/
 
 @media (max-width: 990px) {
 
-    #container {
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 100%;
-    }
+  #container {
+    margin: 32px;
+    line-height: 100%;
+    overflow: hidden;
+  }
 
-    header {
-        margin: 0 0 -2.ageno-5rem 0;
-    }
+  .ageno-article-header__article-meta {
+    margin: 0 16px;
+  }
 
+  .ageno-article-meta-secondary__author {
+    width: 100%;
+    margin: 0;
+    padding: 32px 38px;
+  }
 
-    .ageno-article__author-beam {
-        top: 0;
-        padding: 10px 0;
-    }
+  .ageno-article-meta__h1 {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 32px;
+  }
 
-    .ageno-article__author-image img {
-        width: 4.ageno-25rem;
-        height: 4.ageno-25rem;
-    }
+  .ageno-h2,
+  .ageno-h3,
+  .ageno-h4 {
+    padding: 16px 0 8px 0;
+    text-align: center;
+  }
 
-    .ageno-article__author-name {
-        top: 1.ageno-7rem;
-        left: 5.ageno-7rem;
-        font-size: 1.ageno-4rem;
+  .ageno-h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+  }
 
-    }
+  .ageno-h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 
-    .ageno-article__date {
-        top: 3.ageno-3rem;
-        left: 5.ageno-7rem;
-        font-size: 1.ageno-2rem;
-    }
+  .ageno-p__lead{
+    margin-left:0;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    width: auto;
+  }
 
+  .ageno-subheader {
+    padding: 16px 0 0px 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
 
+  .ageno-p {
+    font-size: 16px;
+    line-height: 28px;
 
+  }
 
+  p:nth-of-type(2)::first-letter {
+    font-size: 64px;
+    line-height: 0.4em;
+  }
 
-    img.ageno-wp-caption {
-        margin-left: 0;
-        width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
+  .ageno-summary {
+    background: rgb(247, 247, 251);
+    padding: 32px 48px;
+    margin: 48px 24px;
+    position: relative;
+  }
 
-    h6.ageno-wp-caption-text {
-        margin-top: 2%;
-        padding-left: 16px;
-        padding-right: 6px;
-        margin-left: -1px;
-    }
+  .ageno-timeline li{
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 32px;
+  }
 
-    aside {
-        width: 100%;
-    }
+  .ageno-summary::after {
+    line-height: 24px;
+    top: 36px;
+    left: -15px;
+  }
 
+  .ageno-summary::before {
+    top: 24px;
+    left: -24px;
+  }
 
-    .ageno-source {
+  img.ageno-wp-caption {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 
-    }
+  h6.ageno-wp-caption-text {
+    margin-top: 2%;
+    padding-left: 16px;
+    padding-right: 6px;
+    margin-left: -1px;
+  }
 
-    .ageno-author {
-
-    }
-}
-
-
-/* FONTS AND LINE-HEIGHT SIZES ON SMALL DEVICES*/
-@media (max-width: 900px) {
-    html {
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-
-    h1 {
-        font-size: 2rem;
-        line-height: 1.ageno-25em;
-    }
-
-
-
-    h3 {
-        font-size: 1.ageno-5rem;
-        line-height: 1.ageno-90rem;
-    }
-
-    blockquote, li, p, h4 {
-        font-size: 1.ageno-4rem;
-        line-height: 2rem;
-    }
-
-
-}
-
-@media (max-width: 400px) {
-    html {
-        font-size: 13px;
-    }
+  .ageno-article-read-more{
+    font-size: 16px;
+    line-height: 28px;
+    top:0;
 }
