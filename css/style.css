@@ -163,8 +163,8 @@ article {
 }
 
 .ageno-author__avatar {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   float: left;
   margin-right: 16px;
 }
@@ -648,20 +648,26 @@ h6.ageno-wp-caption-text {
     overflow: hidden;
   }
 
+  article{
+    padding: 0 8px;
+  }
+
   .ageno-article-header__article-meta {
     margin: 0 16px;
   }
 
-  .ageno-article-meta-secondary__author {
+  .ageno-article-meta-secondary__author,
+  .ageno-article-meta-secondary__post-date {
     width: 100%;
-    margin: 0;
-    padding: 32px 38px;
+    float: none;
+}
+
+.ageno-article-meta-secondary__post-date {
+    padding-bottom: 32px;
   }
 
-  .ageno-article-meta__h1 {
-    font-size: 32px;
-    line-height: 48px;
-    margin: 32px;
+.ageno-article-meta-secondary {
+    padding: 24px 40px;
   }
 
   .ageno-h2,
