@@ -20,6 +20,11 @@ html {
   font-size: 14px;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   font-size: 18px;
   line-height: 1em;
@@ -243,7 +248,7 @@ article {
 }
 
 .ageno-series li a {
-  color:var(--ageno-second-color);
+  color:#1245bfde;
   padding: 0 0 2px 0;
   text-decoration: none;
   transition: box-shadow .15s ease-in-out;
@@ -631,12 +636,41 @@ h6.ageno-wp-caption-text {
 }
 
 
+/*SEE SIMILAR TOPIC*/
+
+.ageno-see-also {
+  margin: 32px 8px 8px 16px;
+  background-color: #d6d6d62b;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 6px 4px 7px 0px #e6e6e640;
+  width: 90%;
+}
+
+.ageno-see-also a:hover{
+  text-decoration: underline;
+  color:#1245bfde;
+}
+
 /*SOURCE*/
+.ageno-source{
+  margin:42px 0;
+  text-align: center;
+}
+
+.ageno-source a:hover{
+  color:#ff5252b5;
+}
 
 .ageno-source p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
+
+.ageno-source span{
+  font-weight: bold;
+}
+
 
 /*@MEDIA PROPERTIES ON SMALL DEVICES*/
 
@@ -660,13 +694,13 @@ h6.ageno-wp-caption-text {
   .ageno-article-meta-secondary__post-date {
     width: 100%;
     float: none;
-}
+  }
 
-.ageno-article-meta-secondary__post-date {
+  .ageno-article-meta-secondary__post-date {
     padding-bottom: 32px;
   }
 
-.ageno-article-meta-secondary {
+  .ageno-article-meta-secondary {
     padding: 24px 40px;
   }
 
@@ -756,4 +790,9 @@ h6.ageno-wp-caption-text {
     font-size: 16px;
     line-height: 28px;
     top:0;
-}
+  }
+
+  .ageno-see-also {
+    margin: 32px 0;
+    font-size: 16px;
+  }
