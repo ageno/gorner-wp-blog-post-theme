@@ -1,8 +1,6 @@
 :root {
   --ageno-border-radius: 8px;
-
 }
-
 
 *::selection {
   background: rgb(118, 57, 255);
@@ -16,18 +14,12 @@ body div {
 
 html {
   box-sizing: border-box;
-  width: 100vw;
   font-size: 14px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
-}
-
-ul {
-  font-size: 18px;
-  line-height: 1em;
 }
 
 article {
@@ -37,7 +29,6 @@ article {
   font-weight: 400;
   font-size: 16px;
 }
-
 
 .ageno-article-header {
   margin: 0;
@@ -60,7 +51,6 @@ article {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-
 }
 
 .ageno-article-meta__image:after {
@@ -98,11 +88,9 @@ article {
   text-decoration: none;
 }
 
-
 .ageno-article-meta__breadcrumb a:hover {
   color: rgba(196, 194, 212, 0.58);
 }
-
 
 .ageno-article-meta__breadcrumb a:after {
   font-size: 16px;
@@ -130,6 +118,7 @@ article {
   position: relative;
   font-size: 0; /*Removing spaces between elements*/
 }
+
 .ageno-article-meta__post-tags a {
   color: rgb(99, 98, 111);
   font-family: 'Roboto', sans-serif;
@@ -185,7 +174,6 @@ article {
   display: block;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
-  line-height: 24px;
 }
 
 .ageno-author__name--role {
@@ -194,7 +182,6 @@ article {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
-  letter-spacing: 1.ageno-5px;
   color: rgb(173, 172, 183);
 }
 
@@ -209,8 +196,6 @@ article {
 }
 
 /* Article Series -----------------------------------------------------*/
-
-
 .ageno-series {
   list-style: none;
   counter-reset: ageno-counter1;
@@ -228,6 +213,7 @@ article {
   position: relative;
   margin-left: 48px;
 }
+
 .ageno-series li::before {
   content: counter(ageno-counter1) ".";
   font-family: 'Roboto', sans-serif;
@@ -311,7 +297,6 @@ article {
   color: rgba(3,27,78,.7);
   display:block;
 }
-
 
 .ageno-p {
   font-family: 'Roboto', sans-serif;
@@ -418,7 +403,6 @@ article {
 /* End general Typography -----------------------------------------------------*/
 
 
-
 .ageno-summary {
   background: rgb(247, 247, 251);
   padding: 32px 48px;
@@ -461,7 +445,6 @@ article {
   z-index: 3;
 }
 
-
 .ageno-summary__p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -471,56 +454,13 @@ article {
   border-radius: var(--ageno-border-radius);
 }
 
-/*MAIN CONTAINER*/
+/* Ageno main container -----------------------------------------------------*/
 .ageno-container {
   max-width: 740px;
   margin: 0 auto;
 }
 
-/*AUTHOR BEAM*/
-.ageno-article__author-beam {
-  position: relative;
-  top: 1.ageno-2rem;
-  padding: 24px 0;
-}
-
-.ageno-article__author-image img {
-  display: inline-block;
-  width: 6.ageno-25rem;
-  height: 6.ageno-25rem;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 1px solid #dddee4;
-  margin-bottom:8px;
-}
-
-
-.ageno-article__author-name {
-  position: absolute;
-  text-transform: uppercase;
-  top: 3.ageno-3rem;
-  left: 8rem;
-}
-
-
-
-
-/*POST ELEMENTS*/
-.ageno-post__elements span {
-  letter-spacing: .ageno-2px;
-  font-weight: 100;
-  line-height: 16px;
-}
-
-.ageno-fas {
-  font-size: 1.ageno-1rem;
-  color: rgba(35, 35, 35, 0.72);
-}
-
-
-/*LIST WITH ARTICLE SERIES*/
-
-
+/* Ageno initial letter -----------------------------------------------------*/
 p:nth-of-type(2)::first-letter {
   display: block;
   margin-right: 19px;
@@ -535,8 +475,7 @@ p:nth-of-type(2)::first-letter {
 }
 
 
-
-/*CAPTION*/
+/* Ageno image caption -----------------------------------------------------*/
 img.ageno-wp-caption {
   display: block;
   margin-top: 2rem;
@@ -562,8 +501,7 @@ h6.ageno-wp-caption-text {
   line-height: 24px;
 }
 
-/*BLOCKQUOTE*/
-
+/* Ageno blockquote -----------------------------------------------------*/
 .ageno-main__blockquote {
   box-sizing: border-box;
   position: relative;
@@ -593,7 +531,7 @@ h6.ageno-wp-caption-text {
 }
 
 
-/*READ MORE BANNER*/
+/* Ageno read more banner -----------------------------------------------------*/
 .ageno-article-read-more {
   text-align: center;
   position: relative;
@@ -636,11 +574,10 @@ h6.ageno-wp-caption-text {
 }
 
 
-/*SEE SIMILAR TOPIC*/
-
+/* Ageno see also -----------------------------------------------------*/
 .ageno-see-also {
   margin: 32px 8px 8px 16px;
-  background-color: #d6d6d62b;
+  background-color: #c5c0c01a;
   border-radius: 8px;
   padding: 8px 16px;
   box-shadow: 6px 4px 7px 0px #e6e6e640;
@@ -652,7 +589,7 @@ h6.ageno-wp-caption-text {
   color:#1245bfde;
 }
 
-/*SOURCE*/
+/* Ageno source -----------------------------------------------------*/
 .ageno-source{
   margin:42px 0;
   text-align: center;
