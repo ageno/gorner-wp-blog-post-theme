@@ -195,7 +195,9 @@ article {
   color: rgb(173, 172, 183);
 }
 
+
 /* Article Series -----------------------------------------------------*/
+
 .ageno-series {
   list-style: none;
   counter-reset: ageno-counter1;
@@ -257,7 +259,6 @@ article {
 
 
 /* General Typography -----------------------------------------------------*/
-
 
 .ageno-h2,
 .ageno-h3,
@@ -402,7 +403,6 @@ article {
 
 /* End general Typography -----------------------------------------------------*/
 
-
 .ageno-summary {
   background: rgb(247, 247, 251);
   padding: 32px 48px;
@@ -455,12 +455,14 @@ article {
 }
 
 /* Ageno main container -----------------------------------------------------*/
+
 .ageno-container {
   max-width: 740px;
   margin: 0 auto;
 }
 
 /* Ageno initial letter -----------------------------------------------------*/
+
 p:nth-of-type(2)::first-letter {
   display: block;
   margin-right: 19px;
@@ -476,6 +478,7 @@ p:nth-of-type(2)::first-letter {
 
 
 /* Ageno image caption -----------------------------------------------------*/
+
 img.ageno-wp-caption {
   display: block;
   margin-top: 2rem;
@@ -502,6 +505,7 @@ h6.ageno-wp-caption-text {
 }
 
 /* Ageno blockquote -----------------------------------------------------*/
+
 .ageno-main__blockquote {
   box-sizing: border-box;
   position: relative;
@@ -531,7 +535,8 @@ h6.ageno-wp-caption-text {
 }
 
 
-/* Ageno read more banner -----------------------------------------------------*/
+/* Ageno read more banner ---------------------------------------------------*/
+
 .ageno-article-read-more {
   text-align: center;
   position: relative;
@@ -574,7 +579,7 @@ h6.ageno-wp-caption-text {
 }
 
 
-/* Ageno see also -----------------------------------------------------*/
+/* Ageno see also -----------------------------------------------------------*/
 .ageno-see-also {
   margin: 32px 8px 8px 16px;
   background-color: #c5c0c01a;
@@ -589,7 +594,7 @@ h6.ageno-wp-caption-text {
   color:#1245bfde;
 }
 
-/* Ageno source -----------------------------------------------------*/
+/* Ageno source -------------------------------------------------------------*/
 .ageno-source{
   margin:42px 0;
   text-align: center;
@@ -676,7 +681,6 @@ h6.ageno-wp-caption-text {
   .ageno-p {
     font-size: 16px;
     line-height: 28px;
-
   }
 
   p:nth-of-type(2)::first-letter {
