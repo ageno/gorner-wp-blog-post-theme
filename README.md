@@ -17,7 +17,7 @@
 We've been abandon BEM methodology due to complexity. It has to be extremely easy to use for copywriters and people who publish blog posts.
 
 ## Demo
-[ageno.github.io/blog_post_theme](https://ageno.github.io/blog_post_theme/index.html)
+[ageno.github.io/gorner-wp-blog-post-theme] (https://ageno.github.io/gorner-wp-blog-post-theme/)
 
 ## Credits:
 - Avatars: [uifaces.co](https://uifaces.co/)
