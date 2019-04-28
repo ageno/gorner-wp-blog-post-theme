@@ -613,6 +613,35 @@ h6.ageno-wp-caption-text {
   font-weight: bold;
 }
 
+/*Ageno table----------------------------------------------------------------*/
+
+.ageno_article-table {
+width: 990px;
+border-collapse: collapse;
+margin: 64px 16px 64px -8rem;
+font-family: 'Roboto', sans-serif;
+color: rgba(3,27,78,.7);
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eeeeee70;;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+    color: rgba(3, 26, 78, 0.76);
+  }
+
+td, th {
+  padding: 16px;
+  border: 1px solid #d8d8d863;;
+  text-align: left;
+}
+
 
 /*@MEDIA PROPERTIES ON SMALL DEVICES*/
 
@@ -737,3 +766,12 @@ h6.ageno-wp-caption-text {
     margin: 32px 0;
     font-size: 16px;
   }
+
+  .ageno_article-table {
+  width: 990px;
+  margin: 64px 16px;
+  border-collapse: collapse;
+  overflow-x: auto;
+  }
+
+}
