@@ -616,35 +616,57 @@ h6.ageno-wp-caption-text {
 /*Ageno table----------------------------------------------------------------*/
 
 .ageno_article-table {
-width: 990px;
-border-collapse: collapse;
-margin: 64px 16px 64px -8rem;
-font-family: 'Roboto', sans-serif;
-color: rgba(3,27,78,.7);
+  width: 990px;
+  margin:32px 0 32px -8rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(3,27,78,.7);
+  border-collapse: collapse;
 }
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: #eeeeee70;;
-}
+
 th {
   background: #333;
-  color: white;
-  font-weight: bold;
+  font-weight: 00;
 }
 
 td {
-    color: rgba(3, 26, 78, 0.76);
-  }
+  color: rgba(3, 26, 78, 0.76);
+}
 
 td, th {
   padding: 16px;
   border: 1px solid #d8d8d863;;
-  text-align: left;
+  text-align: center;
 }
 
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eeeeee70;
+}
+
+tr:nth-of-type(1) td {
+  color: #e6e6e6;
+  text-align:center;
+}
+
+td:nth-of-type(1) {
+  text-align:left;
+  font-weight: 700;
+}
+
+tr:nth-of-type(1) {
+  font-weight: 700;
+  background-color: #4c6579;
+}
+
+caption {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: oblique;
+    color: #79759c;
+  }
 
 /*@MEDIA PROPERTIES ON SMALL DEVICES*/
-
 @media (max-width: 990px) {
 
   #container {
@@ -673,6 +695,13 @@ td, th {
 
   .ageno-article-meta-secondary {
     padding: 24px 40px;
+  }
+
+  .ageno-article-meta__h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 800;
+    margin: 16px 0 16px 0;
   }
 
   .ageno-h2,
@@ -767,11 +796,13 @@ td, th {
     font-size: 16px;
   }
 
-  .ageno_article-table {
-  width: 990px;
-  margin: 64px 16px;
-  border-collapse: collapse;
-  overflow-x: auto;
+  .ageno_article-table{
+    display: block;
+    margin-left: 0;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style:
+    -ms-autohiding-scrollbar;
   }
 
 }
