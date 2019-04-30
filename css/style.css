@@ -243,7 +243,7 @@ article {
 }
 
 .ageno-series li a:hover {
-  color: rgb(0, 117, 235);
+  color: #2d3f69de;
   box-shadow: inset 0 -1px 0 rgba(99, 98, 111, 0.5);
 }
 
@@ -251,10 +251,11 @@ article {
   box-shadow: inset 0 -1px 0 rgba(99, 98, 111, 0.5);
 }
 
-.ageno-series li:after {
-  content: '\279E';
-  margin-left: 8px;
-  color: rgb(173, 172, 183);
+.ageno-series a:after {
+    content: '\279E';
+    margin-left: 8px;
+    color: rgb(173, 172, 183);
+    position: absolute;
 }
 
 
@@ -595,6 +596,7 @@ h6.ageno-wp-caption-text {
 }
 
 /* Ageno source -------------------------------------------------------------*/
+
 .ageno-source{
   margin:42px 0;
   text-align: center;
@@ -616,46 +618,40 @@ h6.ageno-wp-caption-text {
 /*Ageno table----------------------------------------------------------------*/
 
 .ageno_article-table {
-  width: 990px;
-  margin:32px 0 32px -8rem;
-  font-family: 'Roboto', sans-serif;
-  color: rgba(3,27,78,.7);
+  font-family: 'Roboto', sans-serif;  /* Nie wiadomo czy Roboto */
+  font-size: inherit;
+  width: 100%;
+  padding: 0;
   border-collapse: collapse;
+  color: rgb(3,27,78);
+  margin: 64px auto 32px auto;
 }
 
-th {
-  background: #333;
-  font-weight: 00;
-}
+ table caption {
+    font-size: 16px;
+    margin: 32px auto;
+    color: rgba(3, 27, 78, 0.45);
+  }
 
-td {
+th, td {
+  padding: 8px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom:1px solid #92a2f514;
   color: rgba(3, 26, 78, 0.76);
 }
 
-td, th {
-  padding: 16px;
-  border: 1px solid #d8d8d863;;
-  text-align: center;
-}
+tr:last-child td { border: none; }
 
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: #eeeeee70;
-}
+th { font-weight: bold; }
 
-tr:nth-of-type(1) td {
-  color: #e6e6e6;
-  text-align:center;
-}
+tr.right td, tr.right th { text-align: right; }
 
-td:nth-of-type(1) {
-  text-align:left;
-  font-weight: 700;
-}
+tr.center td, tr.center th { text-align: right; }
 
-tr:nth-of-type(1) {
-  font-weight: 700;
-  background-color: #4c6579;
+td small, th small {
+  font-size: 14px;
+  opacity: .6;
 }
 
 caption {
@@ -796,13 +792,56 @@ caption {
     font-size: 16px;
   }
 
-  .ageno_article-table{
-    display: block;
-    margin-left: 0;
-    width: 100%;
-    overflow-x: auto;
-    -ms-overflow-style:
-    -ms-autohiding-scrollbar;
+/*TABLE-------------------------------------------------------------*/
+   table {
+      border: 0;
+    }
+
+    table caption {
+      font-size: 14px;
+      margin: 16px 32px;
+    }
+
+    th {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    table tr {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+
+    table td {
+      border-bottom: 1px solid #92a2f514;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+      margin: 8px auto;
+    }
+
+    tr:last-child td { border-bottom: 1px solid #92a2f514;
   }
 
-}
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
